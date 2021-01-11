@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GameSectionButton.png-71ba385ea185ab2ce0fced96fd8a655e.stex"
+path="res://.import/TriviaQuestionBtn.png-b90fd29c06656b4630b680c1808021ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Buttons/GameSectionButton.png"
-dest_files=[ "res://.import/GameSectionButton.png-71ba385ea185ab2ce0fced96fd8a655e.stex" ]
+source_file="res://Assets/Buttons/TriviaQuestionBtn.png"
+dest_files=[ "res://.import/TriviaQuestionBtn.png-b90fd29c06656b4630b680c1808021ea.stex" ]
 
 [params]
 

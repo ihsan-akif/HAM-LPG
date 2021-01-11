@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LeaderboardButton.png-df8939fa943c78baa86340a63d2448bf.stex"
+path="res://.import/SettingsBtn.png-720f56629713a1a96ecbc80ad72c3d89.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Buttons/LeaderboardButton.png"
-dest_files=[ "res://.import/LeaderboardButton.png-df8939fa943c78baa86340a63d2448bf.stex" ]
+source_file="res://Assets/Buttons/SettingsBtn.png"
+dest_files=[ "res://.import/SettingsBtn.png-720f56629713a1a96ecbc80ad72c3d89.stex" ]
 
 [params]
 
