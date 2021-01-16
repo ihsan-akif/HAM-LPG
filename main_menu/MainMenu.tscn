@@ -68,6 +68,7 @@ alignment = 1
 [node name="LearningSectionButton" parent="Menu/UpperButton/ButtonIcon1/Buttons" instance=ExtResource( 8 )]
 margin_top = 10.0
 margin_bottom = 70.0
+scene_to_load = "res://learning_section/LearningSection.tscn"
 
 [node name="ButtonIcon2" type="VBoxContainer" parent="Menu/UpperButton"]
 margin_left = 410.0
