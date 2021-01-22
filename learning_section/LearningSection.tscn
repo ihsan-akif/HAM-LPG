@@ -1,12 +1,14 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scene/Scene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=2]
 [ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=3]
 [ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Videos/My Video.webm" type="VideoStream" id=5]
+[ext_resource path="res://Assets/Videos/Introduction Video.webm" type="VideoStream" id=5]
 [ext_resource path="res://Assets/Buttons/LeftBtn.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Buttons/RightBtn.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Buttons/LeftHoverBtn.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Buttons/RightHoverBtn.png" type="Texture" id=9]
 
 [node name="LearningSection" instance=ExtResource( 1 )]
 
@@ -31,6 +33,9 @@ margin_top = 16.9514
 margin_right = 163.141
 margin_bottom = 142.951
 texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="." index="3"]
 anchor_right = 1.0
@@ -69,10 +74,21 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -127.402
-margin_top = -20.0
-margin_right = -46.4018
+margin_left = -125.283
+margin_top = -52.8434
+margin_right = -44.2831
+margin_bottom = -2.84338
+
+[node name="Label" type="Label" parent="Panel/PlayButton" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 2 )
 text = "Play"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PauseButton" type="Button" parent="Panel" index="2"]
 anchor_left = 0.5
@@ -80,11 +96,19 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = 62.8832
-margin_top = -20.0
+margin_top = -52.7244
 margin_right = 143.883
-text = "Pause"
+margin_bottom = -2.72443
 
-[node name="TextureButton2" type="TextureButton" parent="." index="5"]
+[node name="Label" type="Label" parent="Panel/PauseButton" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 2 )
+text = "Pause"
+align = 1
+valign = 1
+
+[node name="PreviousPageButton" type="TextureButton" parent="." index="5"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -93,8 +117,9 @@ margin_left = -116.955
 margin_top = -84.0
 margin_right = -30.0
 texture_normal = ExtResource( 6 )
+texture_hover = ExtResource( 8 )
 
-[node name="TextureButton3" type="TextureButton" parent="." index="6"]
+[node name="NextPageButton" type="TextureButton" parent="." index="6"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -103,10 +128,24 @@ margin_left = 73.3135
 margin_top = -84.0
 margin_right = 157.313
 texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label2" type="Label" parent="." index="7"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -10.0558
+margin_top = -58.7017
+margin_right = 55.9442
+margin_bottom = -23.7017
+custom_fonts/font = ExtResource( 2 )
+text = "1 / 10"
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="Panel/PlayButton" to="." method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="Panel/PauseButton" to="." method="_on_PauseButton_pressed"]
+[connection signal="pressed" from="NextPageButton" to="." method="_on_NextPageButton_pressed"]

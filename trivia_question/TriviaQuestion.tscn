@@ -1,0 +1,133 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://scene/Scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=2]
+[ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=3]
+[ext_resource path="res://trivia_question/Questions/Question 1/Soalan 1.png" type="Texture" id=4]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanD.png" type="Texture" id=5]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanC.png" type="Texture" id=6]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanB.png" type="Texture" id=7]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanA.png" type="Texture" id=8]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanAHover.png" type="Texture" id=9]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanDHover.png" type="Texture" id=10]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanBHover.png" type="Texture" id=11]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanCHover.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Buttons/NextBtn.png" type="Texture" id=13]
+
+[node name="TriviaQuestion" instance=ExtResource( 1 )]
+margin_left = -3.17834
+margin_top = 2.11896
+margin_right = -3.17834
+margin_bottom = 2.11896
+
+[node name="CenterContainer" parent="." index="0"]
+visible = false
+
+[node name="VBoxContainer" parent="CenterContainer" index="0"]
+margin_left = 482.0
+margin_right = 797.0
+
+[node name="Label" parent="CenterContainer/VBoxContainer" index="0"]
+margin_right = 315.0
+custom_colors/font_color_shadow = Color( 0, 0, 1, 1 )
+text = "Trivia Question"
+
+[node name="Button" parent="CenterContainer/VBoxContainer" index="1"]
+margin_right = 75.0
+
+[node name="TextureButton" type="TextureButton" parent="." index="1"]
+margin_left = 38.0
+margin_top = 16.0
+margin_right = 163.0
+margin_bottom = 142.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton6" type="TextureButton" parent="." index="2"]
+margin_left = 1117.0
+margin_top = 16.0
+margin_bottom = 142.0
+hint_tooltip = "Next Question"
+texture_normal = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="." index="3"]
+anchor_right = 1.0
+margin_top = 20.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 1, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+text = "Trivia Question"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="." index="4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 333.377
+margin_top = 100.888
+margin_right = 854.377
+margin_bottom = 335.888
+rect_scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" type="TextureButton" parent="." index="5"]
+margin_left = 370.083
+margin_top = 450.465
+margin_right = 1271.08
+margin_bottom = 768.465
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 8 )
+texture_hover = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton3" type="TextureButton" parent="." index="6"]
+margin_left = 658.083
+margin_top = 450.465
+margin_right = 1559.08
+margin_bottom = 768.465
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton4" type="TextureButton" parent="." index="7"]
+margin_left = 370.083
+margin_top = 562.465
+margin_right = 1271.08
+margin_bottom = 880.465
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 6 )
+texture_hover = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton5" type="TextureButton" parent="." index="8"]
+margin_left = 658.083
+margin_top = 562.465
+margin_right = 1559.08
+margin_bottom = 880.465
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="TextureButton6" to="." method="_on_TextureButton6_pressed"]
