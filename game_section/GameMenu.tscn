@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scene/Scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Images/Background/Background 2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=3]
+[ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=4]
+[ext_resource path="res://game_section/Images/CrosswordIcon.png" type="Texture" id=5]
+[ext_resource path="res://game_section/Images/DragAndDropIcon.png" type="Texture" id=6]
+
+[node name="GameSection" instance=ExtResource( 1 )]
+
+[node name="Background" type="TextureRect" parent="." index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" parent="." index="1"]
+visible = false
+
+[node name="VBoxContainer" parent="CenterContainer" index="0"]
+margin_left = 502.0
+margin_right = 777.0
+
+[node name="Label" parent="CenterContainer/VBoxContainer" index="0"]
+margin_right = 275.0
+custom_colors/font_color_shadow = Color( 1, 1, 0, 1 )
+text = "Game Section"
+
+[node name="Button" parent="CenterContainer/VBoxContainer" index="1"]
+margin_right = 275.0
+
+[node name="TextureButton" type="TextureButton" parent="." index="2"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="." index="3"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -137.5
+margin_right = 137.5
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color_shadow = Color( 1, 1, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+text = "Game Section"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="." index="4"]
+anchor_left = 0.254
+anchor_top = 0.5
+anchor_right = 0.254
+anchor_bottom = 0.5
+margin_left = -125.12
+margin_top = -125.5
+margin_right = -74.12
+margin_bottom = 125.5
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="." index="5"]
+anchor_left = 0.746
+anchor_top = 0.5
+anchor_right = 0.746
+anchor_bottom = 0.5
+margin_left = -125.12
+margin_top = -125.5
+margin_right = 125.88
+margin_bottom = 125.5
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scene/Scene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=2]
@@ -13,6 +13,11 @@
 [ext_resource path="res://trivia_question/Questions/Question 2/JawapanDHover.png" type="Texture" id=11]
 [ext_resource path="res://trivia_question/Questions/Question 2/JawapanB.png" type="Texture" id=12]
 [ext_resource path="res://Assets/Buttons/NextBtn.png" type="Texture" id=13]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanBBetul.png" type="Texture" id=14]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanASalah.png" type="Texture" id=15]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanDSalah.png" type="Texture" id=16]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanCSalah.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=18]
 
 [node name="TriviaQuestion" instance=ExtResource( 1 )]
 margin_left = -3.17834
@@ -20,7 +25,15 @@ margin_top = 2.11896
 margin_right = -3.17834
 margin_bottom = 2.11896
 
-[node name="CenterContainer" parent="." index="0"]
+[node name="Background" type="TextureRect" parent="." index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" parent="." index="1"]
 visible = false
 
 [node name="VBoxContainer" parent="CenterContainer" index="0"]
@@ -35,27 +48,26 @@ text = "Trivia Question"
 [node name="Button" parent="CenterContainer/VBoxContainer" index="1"]
 margin_right = 75.0
 
-[node name="TextureButton" type="TextureButton" parent="." index="1"]
-margin_left = 38.0
-margin_top = 16.0
-margin_right = 163.0
-margin_bottom = 142.0
+[node name="TextureButton" type="TextureButton" parent="." index="2"]
+margin_right = 125.0
+margin_bottom = 126.0
 texture_normal = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureButton6" type="TextureButton" parent="." index="2"]
-margin_left = 1117.0
-margin_top = 16.0
-margin_bottom = 142.0
+[node name="Q2NextBtn" type="TextureButton" parent="." index="3"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -125.0
+margin_bottom = 126.0
 hint_tooltip = "Next Question"
 texture_normal = ExtResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="." index="3"]
+[node name="Label" type="Label" parent="." index="4"]
 anchor_right = 1.0
 margin_top = 20.0
 custom_fonts/font = ExtResource( 3 )
@@ -69,7 +81,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="." index="4"]
+[node name="TextureRect" type="TextureRect" parent="." index="5"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 333.377
@@ -82,7 +94,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureButton2" type="TextureButton" parent="." index="5"]
+[node name="TextureButton2" type="TextureButton" parent="." index="6"]
 margin_left = 370.083
 margin_top = 450.465
 margin_right = 1271.08
@@ -90,11 +102,12 @@ margin_bottom = 768.465
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 9 )
 texture_hover = ExtResource( 8 )
+texture_focused = ExtResource( 15 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureButton3" type="TextureButton" parent="." index="6"]
+[node name="TextureButton3" type="TextureButton" parent="." index="7"]
 margin_left = 658.083
 margin_top = 450.465
 margin_right = 1559.08
@@ -102,11 +115,12 @@ margin_bottom = 768.465
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 12 )
 texture_hover = ExtResource( 10 )
+texture_focused = ExtResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureButton4" type="TextureButton" parent="." index="7"]
+[node name="TextureButton4" type="TextureButton" parent="." index="8"]
 margin_left = 370.083
 margin_top = 562.465
 margin_right = 1271.08
@@ -114,11 +128,12 @@ margin_bottom = 880.465
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 6 )
 texture_hover = ExtResource( 5 )
+texture_focused = ExtResource( 17 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureButton5" type="TextureButton" parent="." index="8"]
+[node name="TextureButton5" type="TextureButton" parent="." index="9"]
 margin_left = 658.083
 margin_top = 562.465
 margin_right = 1559.08
@@ -126,8 +141,9 @@ margin_bottom = 880.465
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 4 )
 texture_hover = ExtResource( 11 )
+texture_focused = ExtResource( 16 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
-[connection signal="pressed" from="TextureButton6" to="." method="_on_TextureButton6_pressed"]
+[connection signal="pressed" from="Q2NextBtn" to="." method="_on_Q2NextBtn_pressed"]

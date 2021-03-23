@@ -1,0 +1,162 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scene/Scene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Videos/Introduction Video.webm" type="VideoStream" id=2]
+[ext_resource path="res://Assets/Buttons/LeftBtn.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Buttons/LeftHoverBtn.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Buttons/RightHoverBtn.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Buttons/RightBtn.png" type="Texture" id=7]
+[ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=8]
+[ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=9]
+[ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=10]
+
+[node name="LearningSection" instance=ExtResource( 1 )]
+
+[node name="TextureRect" type="TextureRect" parent="." index="0"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" parent="." index="1"]
+visible = false
+
+[node name="Button" type="Button" parent="." index="2"]
+visible = false
+margin_left = 46.7936
+margin_top = 29.0775
+margin_right = 121.794
+margin_bottom = 130.077
+custom_fonts/font = ExtResource( 9 )
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="." index="3"]
+margin_right = 125.0
+margin_bottom = 126.0
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="." index="4"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -640.0
+margin_right = 640.0
+margin_bottom = 56.0
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+text = "Learning Section"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="." index="5"]
+anchor_top = 0.333
+anchor_right = 0.545
+anchor_bottom = 0.646
+margin_left = 302.978
+margin_top = -130.279
+margin_right = 305.378
+margin_bottom = 144.361
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VideoPlayer" type="VideoPlayer" parent="Panel" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+stream = ExtResource( 2 )
+
+[node name="PlayButton" type="Button" parent="Panel" index="1"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -125.283
+margin_top = -52.8434
+margin_right = -44.2831
+margin_bottom = -2.84338
+
+[node name="Label" type="Label" parent="Panel/PlayButton" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 9 )
+text = "Play"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PauseButton" type="Button" parent="Panel" index="2"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 62.8832
+margin_top = -52.7244
+margin_right = 143.883
+margin_bottom = -2.72443
+
+[node name="Label" type="Label" parent="Panel/PauseButton" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 9 )
+text = "Pause"
+align = 1
+valign = 1
+
+[node name="PreviousPageButton" type="TextureButton" parent="." index="6"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -116.955
+margin_top = -84.0
+margin_right = -30.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 5 )
+
+[node name="NextPageButton" type="TextureButton" parent="." index="7"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 73.3135
+margin_top = -84.0
+margin_right = 157.313
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="." index="8"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -10.0558
+margin_top = -58.7017
+margin_right = 55.9442
+margin_bottom = -23.7017
+custom_fonts/font = ExtResource( 9 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "1 / 10"
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="Panel/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="Panel/PauseButton" to="." method="_on_PauseButton_pressed"]
+[connection signal="pressed" from="NextPageButton" to="." method="_on_NextPageButton_pressed"]

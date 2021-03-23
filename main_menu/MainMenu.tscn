@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Buttons/TriviaQuestionBtn.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Buttons/LeaderboardBtn.png" type="Texture" id=2]
@@ -13,11 +13,20 @@
 [ext_resource path="res://Assets/Buttons/LearningSectionBtn.png" type="Texture" id=11]
 [ext_resource path="res://main_menu/fade_in/FadeIn.tscn" type="PackedScene" id=12]
 [ext_resource path="res://main_menu/main_menu_screen.gd" type="Script" id=13]
+[ext_resource path="res://Assets/Images/Background/Background 2.png" type="Texture" id=14]
 
 [node name="TitleScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -68,7 +77,7 @@ alignment = 1
 [node name="LearningSectionButton" parent="Menu/UpperButton/ButtonIcon1/Buttons" instance=ExtResource( 8 )]
 margin_top = 10.0
 margin_bottom = 70.0
-scene_to_load = "res://learning_section/LearningSection.tscn"
+scene_to_load = "res://learning_section/LearningSectionPage1.tscn"
 
 [node name="ButtonIcon2" type="VBoxContainer" parent="Menu/UpperButton"]
 margin_left = 410.0
@@ -98,6 +107,7 @@ alignment = 1
 [node name="TriviaQuestionButton" parent="Menu/UpperButton/ButtonIcon2/Buttons" instance=ExtResource( 4 )]
 margin_top = 10.0
 margin_bottom = 70.0
+scene_to_load = "res://trivia_question/TriviaQuestion1.tscn"
 
 [node name="ButtonIcon3" type="VBoxContainer" parent="Menu/UpperButton"]
 margin_left = 820.0
@@ -123,6 +133,7 @@ alignment = 1
 [node name="GameSectionButton" parent="Menu/UpperButton/ButtonIcon3/Buttons" instance=ExtResource( 5 )]
 margin_top = 10.0
 margin_bottom = 70.0
+scene_to_load = "res://game_section/GameMenu.tscn"
 
 [node name="LowerButton" type="HBoxContainer" parent="Menu"]
 margin_top = 508.0
