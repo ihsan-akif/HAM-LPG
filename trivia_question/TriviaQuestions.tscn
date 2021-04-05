@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://trivia_question/TriviaQuestions.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=3]
+
+[node name="Quiz" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_right = 125.0
+margin_bottom = 126.0
+texture_normal = ExtResource( 2 )
