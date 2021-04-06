@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://trivia_question/Questions/Question 1/JawapanC.png" type="Texture" id=1]
 [ext_resource path="res://trivia_question/Questions/Question 2/JawapanC.png" type="Texture" id=2]
@@ -11,6 +11,18 @@
 [ext_resource path="res://trivia_question/Questions/Question 2/JawapanA.png" type="Texture" id=9]
 [ext_resource path="res://trivia_question/Questions/Question 1/JawapanA.png" type="Texture" id=10]
 [ext_resource path="res://trivia_question/Questions.gd" type="Script" id=11]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanAHover.png" type="Texture" id=12]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanBHover.png" type="Texture" id=13]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanASalah.png" type="Texture" id=14]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanBSalah.png" type="Texture" id=15]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanDBetul.png" type="Texture" id=16]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanCSalah.png" type="Texture" id=17]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanCHover.png" type="Texture" id=18]
+[ext_resource path="res://trivia_question/Questions/Question 1/JawapanDHover.png" type="Texture" id=19]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanAHover.png" type="Texture" id=20]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanASalah.png" type="Texture" id=21]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanBBetul.png" type="Texture" id=22]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanBHover.png" type="Texture" id=23]
 
 [node name="Questions" type="Control"]
 anchor_right = 1.0
@@ -45,6 +57,8 @@ margin_right = 1271.0
 margin_bottom = 768.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 10 )
+texture_hover = ExtResource( 12 )
+texture_disabled = ExtResource( 14 )
 
 [node name="AnswerB1Btn" type="TextureButton" parent="Question1"]
 margin_left = 658.0
@@ -53,6 +67,8 @@ margin_right = 1559.0
 margin_bottom = 768.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 13 )
+texture_disabled = ExtResource( 15 )
 
 [node name="AnswerC1Btn" type="TextureButton" parent="Question1"]
 margin_left = 370.0
@@ -61,6 +77,8 @@ margin_right = 1271.0
 margin_bottom = 880.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 1 )
+texture_hover = ExtResource( 18 )
+texture_disabled = ExtResource( 17 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -72,6 +90,8 @@ margin_right = 1559.0
 margin_bottom = 880.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 8 )
+texture_hover = ExtResource( 19 )
+texture_disabled = ExtResource( 16 )
 
 [node name="Question2" type="Control" parent="."]
 visible = false
@@ -99,6 +119,8 @@ margin_right = 1271.0
 margin_bottom = 768.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 9 )
+texture_hover = ExtResource( 20 )
+texture_disabled = ExtResource( 21 )
 
 [node name="AnswerB2Btn" type="TextureButton" parent="Question2"]
 margin_left = 658.0
@@ -107,6 +129,8 @@ margin_right = 1559.0
 margin_bottom = 768.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 23 )
+texture_disabled = ExtResource( 22 )
 
 [node name="AnswerC2Btn" type="TextureButton" parent="Question2"]
 margin_left = 370.0
@@ -126,3 +150,7 @@ margin_right = 1559.0
 margin_bottom = 880.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 7 )
+[connection signal="pressed" from="Question1/AnswerA1Btn" to="." method="_on_AnswerA1Btn_pressed"]
+[connection signal="pressed" from="Question1/AnswerB1Btn" to="." method="_on_AnswerB1Btn_pressed"]
+[connection signal="pressed" from="Question1/AnswerC1Btn" to="." method="_on_AnswerC1Btn_pressed"]
+[connection signal="pressed" from="Question1/AnswerD1Btn" to="." method="_on_AnswerD1Btn_pressed"]
