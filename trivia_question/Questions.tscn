@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://trivia_question/Questions/Question 1/JawapanC.png" type="Texture" id=1]
 [ext_resource path="res://trivia_question/Questions/Question 2/JawapanC.png" type="Texture" id=2]
@@ -23,6 +23,49 @@
 [ext_resource path="res://trivia_question/Questions/Question 2/JawapanASalah.png" type="Texture" id=21]
 [ext_resource path="res://trivia_question/Questions/Question 2/JawapanBBetul.png" type="Texture" id=22]
 [ext_resource path="res://trivia_question/Questions/Question 2/JawapanBHover.png" type="Texture" id=23]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanCSalah.png" type="Texture" id=24]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanCHover.png" type="Texture" id=25]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanDHover.png" type="Texture" id=26]
+[ext_resource path="res://trivia_question/Questions/Question 2/JawapanDSalah.png" type="Texture" id=27]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanC.png" type="Texture" id=28]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanDHover.png" type="Texture" id=29]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanCHover.png" type="Texture" id=30]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanB.png" type="Texture" id=31]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanASalah.png" type="Texture" id=32]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanCBetul.png" type="Texture" id=33]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanAHover.png" type="Texture" id=34]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanBSalah.png" type="Texture" id=35]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanDSalah.png" type="Texture" id=36]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanD.png" type="Texture" id=37]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanA.png" type="Texture" id=38]
+[ext_resource path="res://trivia_question/Questions/Question 3/Soalan 3.png" type="Texture" id=39]
+[ext_resource path="res://trivia_question/Questions/Question 3/JawapanBHover.png" type="Texture" id=40]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanDHover.png" type="Texture" id=41]
+[ext_resource path="res://trivia_question/Questions/Question 4/Soalan 4.png" type="Texture" id=42]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanAHover.png" type="Texture" id=43]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanA.png" type="Texture" id=44]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanB.png" type="Texture" id=45]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanASalah.png" type="Texture" id=46]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanBHover.png" type="Texture" id=47]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanBSalah.png" type="Texture" id=48]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanD.png" type="Texture" id=49]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanCSalah.png" type="Texture" id=50]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanDBetul.png" type="Texture" id=51]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanC.png" type="Texture" id=52]
+[ext_resource path="res://trivia_question/Questions/Question 4/JawapanCHover.png" type="Texture" id=53]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanABetul.png" type="Texture" id=54]
+[ext_resource path="res://trivia_question/Questions/Question 5/Soalan 5.png" type="Texture" id=55]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanA.png" type="Texture" id=56]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanDHover.png" type="Texture" id=57]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanD.png" type="Texture" id=58]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanAHover.png" type="Texture" id=59]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanBSalah.png" type="Texture" id=60]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanBHover.png" type="Texture" id=61]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanDSalah.png" type="Texture" id=62]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanCHover.png" type="Texture" id=63]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanCSalah.png" type="Texture" id=64]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanB.png" type="Texture" id=65]
+[ext_resource path="res://trivia_question/Questions/Question 5/JawapanC.png" type="Texture" id=66]
 
 [node name="Questions" type="Control"]
 anchor_right = 1.0
@@ -139,6 +182,8 @@ margin_right = 1271.0
 margin_bottom = 880.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 2 )
+texture_hover = ExtResource( 25 )
+texture_disabled = ExtResource( 24 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -150,7 +195,211 @@ margin_right = 1559.0
 margin_bottom = 880.0
 rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 26 )
+texture_disabled = ExtResource( 27 )
+
+[node name="Question3" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Question3Txt" type="TextureRect" parent="Question3"]
+margin_left = 333.377
+margin_top = 100.888
+margin_right = 2134.38
+margin_bottom = 1055.89
+rect_scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 39 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnswerA3Btn" type="TextureButton" parent="Question3"]
+margin_left = 370.0
+margin_top = 450.0
+margin_right = 1271.0
+margin_bottom = 768.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 38 )
+texture_hover = ExtResource( 34 )
+texture_disabled = ExtResource( 32 )
+
+[node name="AnswerB3Btn" type="TextureButton" parent="Question3"]
+margin_left = 658.0
+margin_top = 450.0
+margin_right = 1559.0
+margin_bottom = 768.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 31 )
+texture_hover = ExtResource( 40 )
+texture_disabled = ExtResource( 35 )
+
+[node name="AnswerC3Btn" type="TextureButton" parent="Question3"]
+margin_left = 370.0
+margin_top = 562.0
+margin_right = 1271.0
+margin_bottom = 880.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 28 )
+texture_hover = ExtResource( 30 )
+texture_disabled = ExtResource( 33 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnswerD3Btn" type="TextureButton" parent="Question3"]
+margin_left = 658.0
+margin_top = 562.0
+margin_right = 1559.0
+margin_bottom = 880.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 37 )
+texture_hover = ExtResource( 29 )
+texture_disabled = ExtResource( 36 )
+
+[node name="Question4" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Question4Txt" type="TextureRect" parent="Question4"]
+margin_left = 333.377
+margin_top = 100.888
+margin_right = 2134.38
+margin_bottom = 1055.89
+rect_scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 42 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnswerA4Btn" type="TextureButton" parent="Question4"]
+margin_left = 370.0
+margin_top = 450.0
+margin_right = 1271.0
+margin_bottom = 768.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 44 )
+texture_hover = ExtResource( 43 )
+texture_disabled = ExtResource( 46 )
+
+[node name="AnswerB4Btn" type="TextureButton" parent="Question4"]
+margin_left = 658.0
+margin_top = 450.0
+margin_right = 1559.0
+margin_bottom = 768.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 45 )
+texture_hover = ExtResource( 47 )
+texture_disabled = ExtResource( 48 )
+
+[node name="AnswerC4Btn" type="TextureButton" parent="Question4"]
+margin_left = 370.0
+margin_top = 562.0
+margin_right = 1271.0
+margin_bottom = 880.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 52 )
+texture_hover = ExtResource( 53 )
+texture_disabled = ExtResource( 50 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnswerD4Btn" type="TextureButton" parent="Question4"]
+margin_left = 658.0
+margin_top = 562.0
+margin_right = 1559.0
+margin_bottom = 880.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 49 )
+texture_hover = ExtResource( 41 )
+texture_disabled = ExtResource( 51 )
+
+[node name="Question5" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Question5Txt" type="TextureRect" parent="Question5"]
+margin_left = 333.377
+margin_top = 100.888
+margin_right = 2134.38
+margin_bottom = 1055.89
+rect_scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 55 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnswerA5Btn" type="TextureButton" parent="Question5"]
+margin_left = 370.0
+margin_top = 450.0
+margin_right = 1271.0
+margin_bottom = 768.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 56 )
+texture_hover = ExtResource( 59 )
+texture_disabled = ExtResource( 54 )
+
+[node name="AnswerB5Btn" type="TextureButton" parent="Question5"]
+margin_left = 658.0
+margin_top = 450.0
+margin_right = 1559.0
+margin_bottom = 768.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 65 )
+texture_hover = ExtResource( 61 )
+texture_disabled = ExtResource( 60 )
+
+[node name="AnswerC5Btn" type="TextureButton" parent="Question5"]
+margin_left = 370.0
+margin_top = 562.0
+margin_right = 1271.0
+margin_bottom = 880.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 66 )
+texture_hover = ExtResource( 63 )
+texture_disabled = ExtResource( 64 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnswerD5Btn" type="TextureButton" parent="Question5"]
+margin_left = 658.0
+margin_top = 562.0
+margin_right = 1559.0
+margin_bottom = 880.0
+rect_scale = Vector2( 0.3, 0.3 )
+texture_normal = ExtResource( 58 )
+texture_hover = ExtResource( 57 )
+texture_disabled = ExtResource( 62 )
 [connection signal="pressed" from="Question1/AnswerA1Btn" to="." method="_on_AnswerA1Btn_pressed"]
 [connection signal="pressed" from="Question1/AnswerB1Btn" to="." method="_on_AnswerB1Btn_pressed"]
 [connection signal="pressed" from="Question1/AnswerC1Btn" to="." method="_on_AnswerC1Btn_pressed"]
 [connection signal="pressed" from="Question1/AnswerD1Btn" to="." method="_on_AnswerD1Btn_pressed"]
+[connection signal="pressed" from="Question2/AnswerA2Btn" to="." method="_on_AnswerA2Btn_pressed"]
+[connection signal="pressed" from="Question2/AnswerB2Btn" to="." method="_on_AnswerB2Btn_pressed"]
+[connection signal="pressed" from="Question2/AnswerC2Btn" to="." method="_on_AnswerC2Btn_pressed"]
+[connection signal="pressed" from="Question2/AnswerD2Btn" to="." method="_on_AnswerD2Btn_pressed"]
+[connection signal="pressed" from="Question3/AnswerA3Btn" to="." method="_on_AnswerA3Btn_pressed"]
+[connection signal="pressed" from="Question3/AnswerB3Btn" to="." method="_on_AnswerB3Btn_pressed"]
+[connection signal="pressed" from="Question3/AnswerC3Btn" to="." method="_on_AnswerC3Btn_pressed"]
+[connection signal="pressed" from="Question3/AnswerD3Btn" to="." method="_on_AnswerD3Btn_pressed"]
+[connection signal="pressed" from="Question4/AnswerA4Btn" to="." method="_on_AnswerA4Btn_pressed"]
+[connection signal="pressed" from="Question4/AnswerB4Btn" to="." method="_on_AnswerB4Btn_pressed"]
+[connection signal="pressed" from="Question4/AnswerC4Btn" to="." method="_on_AnswerC4Btn_pressed"]
+[connection signal="pressed" from="Question4/AnswerD4Btn" to="." method="_on_AnswerD4Btn_pressed"]
+[connection signal="pressed" from="Question5/AnswerA5Btn" to="." method="_on_AnswerA5Btn_pressed"]
+[connection signal="pressed" from="Question5/AnswerB5Btn" to="." method="_on_AnswerB5Btn_pressed"]
+[connection signal="pressed" from="Question5/AnswerC5Btn" to="." method="_on_AnswerC5Btn_pressed"]
+[connection signal="pressed" from="Question5/AnswerD5Btn" to="." method="_on_AnswerD5Btn_pressed"]
