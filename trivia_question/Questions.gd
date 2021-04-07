@@ -2,6 +2,7 @@ extends Control
 
 var highScore : int = 100
 var score : int = 0
+var congratulation_screen = preload("res://trivia_question/TQCongratulationScreen.tscn").instance()
 
 
 # Called when the node enters the scene tree for the first time.
@@ -138,6 +139,7 @@ func _on_AnswerA5Btn_pressed():
 	yield(get_tree().create_timer(2.0), "timeout")
 	get_node("Question5").hide()
 	# Next question show
+	get_tree().get_root().add_child(congratulation_screen)
 
 
 func _on_AnswerB5Btn_pressed():
