@@ -6,10 +6,6 @@ func _ready() -> void:
 	add_child(question)
 
 
-func _process(delta: float) -> void:
-	pass
-
-
 # Create a node
 func create_instance(add):
 	var scene = load(add)

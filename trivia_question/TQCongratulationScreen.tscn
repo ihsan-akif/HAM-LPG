@@ -1,8 +1,89 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://trivia_question/TQCongratulationScreen.gd" type="Script" id=1]
+[ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=3]
+[ext_resource path="res://trivia_question/Tahniah.png" type="Texture" id=4]
 
 [node name="TQCongratulationScreen" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+
+[node name="Banner" type="TextureRect" parent="."]
+anchor_left = 0.495
+anchor_top = 0.21
+anchor_right = 0.495
+anchor_bottom = 0.21
+margin_left = -476.876
+margin_top = -114.055
+margin_right = 159.124
+margin_bottom = 37.9451
+rect_scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.476
+anchor_right = 0.5
+anchor_bottom = 0.476
+margin_left = -191.5
+margin_top = -27.72
+margin_right = 191.5
+margin_bottom = 28.28
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Markah Anda: 100"
+
+[node name="EnterName" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -232.0
+margin_top = 42.0
+margin_right = 232.0
+margin_bottom = 98.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Masukkan Nama Anda"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="TextEdit" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -185.0
+margin_top = 122.0
+margin_right = 176.0
+margin_bottom = 197.0
+custom_fonts/font = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SendBtn" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -182.0
+margin_top = 215.0
+margin_right = 177.0
+margin_bottom = 277.0
+custom_fonts/font = ExtResource( 2 )
+text = "Hantar"

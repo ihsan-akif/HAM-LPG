@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=2]
+[gd_scene load_steps=68 format=2]
 
 [ext_resource path="res://trivia_question/Questions/Question 1/JawapanC.png" type="Texture" id=1]
 [ext_resource path="res://trivia_question/Questions/Question 2/JawapanC.png" type="Texture" id=2]
@@ -66,6 +66,7 @@
 [ext_resource path="res://trivia_question/Questions/Question 5/JawapanCSalah.png" type="Texture" id=64]
 [ext_resource path="res://trivia_question/Questions/Question 5/JawapanB.png" type="Texture" id=65]
 [ext_resource path="res://trivia_question/Questions/Question 5/JawapanC.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=67]
 
 [node name="Questions" type="Control"]
 anchor_right = 1.0
@@ -383,6 +384,14 @@ rect_scale = Vector2( 0.3, 0.3 )
 texture_normal = ExtResource( 58 )
 texture_hover = ExtResource( 57 )
 texture_disabled = ExtResource( 62 )
+
+[node name="BackBtn" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 67 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Question1/AnswerA1Btn" to="." method="_on_AnswerA1Btn_pressed"]
 [connection signal="pressed" from="Question1/AnswerB1Btn" to="." method="_on_AnswerB1Btn_pressed"]
 [connection signal="pressed" from="Question1/AnswerC1Btn" to="." method="_on_AnswerC1Btn_pressed"]
@@ -403,3 +412,4 @@ texture_disabled = ExtResource( 62 )
 [connection signal="pressed" from="Question5/AnswerB5Btn" to="." method="_on_AnswerB5Btn_pressed"]
 [connection signal="pressed" from="Question5/AnswerC5Btn" to="." method="_on_AnswerC5Btn_pressed"]
 [connection signal="pressed" from="Question5/AnswerD5Btn" to="." method="_on_AnswerD5Btn_pressed"]
+[connection signal="pressed" from="BackBtn" to="." method="_on_BackBtn_pressed"]
