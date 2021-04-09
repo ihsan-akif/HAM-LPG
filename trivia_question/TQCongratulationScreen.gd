@@ -8,17 +8,18 @@ var title = "a"
 func _ready():
 	print(global.highScoreTQ)
 	get_node("Score").text = str("Markah Anda: ", global.highScoreTQ)
-	leaderboard_sorting()
+	leaderboard_sortingTQ()
 	pass
 
 
 func _on_SendBtn_pressed():
 	title = str($PlayerName.text)
 	print(title)
-	leaderboard_sorting()
+	leaderboard_sortingTQ()
+	get_tree().change_scene("res://main_menu/MainMenu.tscn")
 
 
-func leaderboard_sorting():
+func leaderboard_sortingTQ():
 	name_matched()
 
 

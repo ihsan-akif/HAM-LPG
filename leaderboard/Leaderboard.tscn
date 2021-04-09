@@ -1,0 +1,461 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=1]
+[ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Images/Background/Background 2.png" type="Texture" id=4]
+[ext_resource path="res://leaderboard/Leaderboard.gd" type="Script" id=5]
+
+[node name="Leaderboard" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 4 )
+
+[node name="LeaderboardTxt" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -129.5
+margin_right = 129.5
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_shadow = Color( 0, 0.501961, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+text = "Leaderboard"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackBtn" type="TextureButton" parent="."]
+margin_right = 125.0
+margin_bottom = 126.0
+texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -475.0
+margin_top = -262.5
+margin_right = 475.0
+margin_bottom = 310.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TQButton" type="Button" parent="Panel"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 240.0
+margin_bottom = 96.0
+
+[node name="TQLabel" type="Label" parent="Panel/TQButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -116.0
+margin_top = -36.5
+margin_right = 116.0
+margin_bottom = 36.5
+custom_fonts/font = ExtResource( 2 )
+text = "Trivia Question Leaderboard"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="DragAndDropButton" type="Button" parent="Panel"]
+margin_left = 376.0
+margin_top = 16.0
+margin_right = 600.0
+margin_bottom = 96.0
+
+[node name="DragAndDropLabel" type="Label" parent="Panel/DragAndDropButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -116.0
+margin_top = -36.5
+margin_right = 116.0
+margin_bottom = 36.5
+custom_fonts/font = ExtResource( 2 )
+text = "Drag And Drop Leaderboard"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="CrosswordButton" type="Button" parent="Panel"]
+margin_left = 710.0
+margin_top = 16.0
+margin_right = 934.0
+margin_bottom = 96.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CrosswordLabel" type="Label" parent="Panel/CrosswordButton"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -116.0
+margin_top = -36.5
+margin_right = 116.0
+margin_bottom = 36.5
+custom_fonts/font = ExtResource( 2 )
+text = "Crossword Leaderboard"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="NameTxt" type="Label" parent="Panel"]
+margin_left = 271.785
+margin_top = 150.444
+margin_right = 345.785
+margin_bottom = 185.444
+custom_fonts/font = ExtResource( 2 )
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreTxt" type="Label" parent="Panel"]
+margin_left = 622.785
+margin_top = 150.444
+margin_right = 696.785
+margin_bottom = 185.444
+custom_fonts/font = ExtResource( 2 )
+text = "Score"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TQHighScore" type="Control" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Number1" type="Label" parent="Panel/TQHighScore"]
+margin_left = 49.7948
+margin_top = 205.536
+margin_right = 89.7948
+margin_bottom = 240.536
+custom_fonts/font = ExtResource( 2 )
+text = "1"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Number2" type="Label" parent="Panel/TQHighScore"]
+margin_left = 49.7948
+margin_top = 245.536
+margin_right = 89.7948
+margin_bottom = 280.536
+custom_fonts/font = ExtResource( 2 )
+text = "2"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Number3" type="Label" parent="Panel/TQHighScore"]
+margin_left = 49.7948
+margin_top = 285.536
+margin_right = 89.7948
+margin_bottom = 320.536
+custom_fonts/font = ExtResource( 2 )
+text = "3"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Number4" type="Label" parent="Panel/TQHighScore"]
+margin_left = 49.7948
+margin_top = 325.536
+margin_right = 89.7948
+margin_bottom = 360.536
+custom_fonts/font = ExtResource( 2 )
+text = "4"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Number5" type="Label" parent="Panel/TQHighScore"]
+margin_left = 49.7948
+margin_top = 365.536
+margin_right = 89.7948
+margin_bottom = 400.536
+custom_fonts/font = ExtResource( 2 )
+text = "5"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Number6" type="Label" parent="Panel/TQHighScore"]
+margin_left = 49.7948
+margin_top = 405.536
+margin_right = 89.7948
+margin_bottom = 440.536
+custom_fonts/font = ExtResource( 2 )
+text = "6"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Number7" type="Label" parent="Panel/TQHighScore"]
+margin_left = 49.7948
+margin_top = 445.536
+margin_right = 89.7948
+margin_bottom = 480.536
+custom_fonts/font = ExtResource( 2 )
+text = "7"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Number8" type="Label" parent="Panel/TQHighScore"]
+margin_left = 49.7948
+margin_top = 485.536
+margin_right = 89.7948
+margin_bottom = 520.536
+custom_fonts/font = ExtResource( 2 )
+text = "8"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Name1" type="Label" parent="Panel/TQHighScore"]
+margin_left = 143.0
+margin_top = 206.0
+margin_right = 494.0
+margin_bottom = 241.0
+custom_fonts/font = ExtResource( 2 )
+text = "Name 1"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name2" type="Label" parent="Panel/TQHighScore"]
+margin_left = 143.0
+margin_top = 246.0
+margin_right = 494.0
+margin_bottom = 281.0
+custom_fonts/font = ExtResource( 2 )
+text = "Name 2"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name3" type="Label" parent="Panel/TQHighScore"]
+margin_left = 143.0
+margin_top = 286.0
+margin_right = 494.0
+margin_bottom = 321.0
+custom_fonts/font = ExtResource( 2 )
+text = "Name 3"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name4" type="Label" parent="Panel/TQHighScore"]
+margin_left = 143.0
+margin_top = 326.0
+margin_right = 494.0
+margin_bottom = 361.0
+custom_fonts/font = ExtResource( 2 )
+text = "Name 4"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name5" type="Label" parent="Panel/TQHighScore"]
+margin_left = 143.0
+margin_top = 366.0
+margin_right = 494.0
+margin_bottom = 401.0
+custom_fonts/font = ExtResource( 2 )
+text = "Name 5"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name6" type="Label" parent="Panel/TQHighScore"]
+margin_left = 143.0
+margin_top = 406.0
+margin_right = 494.0
+margin_bottom = 441.0
+custom_fonts/font = ExtResource( 2 )
+text = "Name 6"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name7" type="Label" parent="Panel/TQHighScore"]
+margin_left = 143.0
+margin_top = 446.0
+margin_right = 494.0
+margin_bottom = 481.0
+custom_fonts/font = ExtResource( 2 )
+text = "Name 7"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name8" type="Label" parent="Panel/TQHighScore"]
+margin_left = 143.0
+margin_top = 486.0
+margin_right = 494.0
+margin_bottom = 521.0
+custom_fonts/font = ExtResource( 2 )
+text = "Name 8"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score1" type="Label" parent="Panel/TQHighScore"]
+margin_left = 492.0
+margin_top = 206.0
+margin_right = 843.0
+margin_bottom = 241.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score 1"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score2" type="Label" parent="Panel/TQHighScore"]
+margin_left = 492.0
+margin_top = 246.0
+margin_right = 843.0
+margin_bottom = 281.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score 2"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score3" type="Label" parent="Panel/TQHighScore"]
+margin_left = 492.0
+margin_top = 286.0
+margin_right = 843.0
+margin_bottom = 321.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score 3"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score4" type="Label" parent="Panel/TQHighScore"]
+margin_left = 492.0
+margin_top = 326.0
+margin_right = 843.0
+margin_bottom = 361.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score 4"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score5" type="Label" parent="Panel/TQHighScore"]
+margin_left = 492.0
+margin_top = 366.0
+margin_right = 843.0
+margin_bottom = 401.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score 5"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score6" type="Label" parent="Panel/TQHighScore"]
+margin_left = 492.0
+margin_top = 406.0
+margin_right = 843.0
+margin_bottom = 441.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score 6"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score7" type="Label" parent="Panel/TQHighScore"]
+margin_left = 492.0
+margin_top = 446.0
+margin_right = 843.0
+margin_bottom = 481.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score 7"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score8" type="Label" parent="Panel/TQHighScore"]
+margin_left = 492.0
+margin_top = 486.0
+margin_right = 843.0
+margin_bottom = 521.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score 8"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="BackBtn" to="." method="_on_BackBtn_pressed"]

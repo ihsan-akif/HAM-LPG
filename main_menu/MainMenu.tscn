@@ -171,6 +171,7 @@ alignment = 1
 [node name="LeaderboardButton" parent="Menu/LowerButton/ButtonIcon4/Buttons" instance=ExtResource( 6 )]
 margin_top = 11.0
 margin_bottom = 71.0
+scene_to_load = "res://leaderboard/Leaderboard.tscn"
 
 [node name="ButtonIcon5" type="VBoxContainer" parent="Menu/LowerButton"]
 margin_left = 592.0
