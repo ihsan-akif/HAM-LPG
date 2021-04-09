@@ -17,6 +17,7 @@ func _on_SendBtn_pressed():
 	print(title)
 	leaderboard_sortingTQ()
 	get_tree().change_scene("res://main_menu/MainMenu.tscn")
+	global.highScoreTQ = 100
 
 
 func leaderboard_sortingTQ():
@@ -43,11 +44,10 @@ func no_name_matched_sorting():
 					global.arrayTQ[k].score = new_score
 					global.arrayTQ[k].name = new_name
 				print(global.arrayTQ[0])
-			k = k + 1
+			k = k - 1
 
 
-
-# If name matched, it will only sort if the previous score will be less than the new scire if the same name
+# If name matched, it will only sort if the previous score will be less than the new score of the same name
 func name_matched():
 	name_matched = false
 	global.arrayTQ[0].name = title

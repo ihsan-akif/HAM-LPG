@@ -225,6 +225,7 @@ valign = 1
 autowrap = true
 
 [node name="Number8" type="Label" parent="Panel/TQHighScore"]
+visible = false
 margin_left = 49.7948
 margin_top = 485.536
 margin_right = 89.7948
@@ -334,6 +335,7 @@ __meta__ = {
 }
 
 [node name="Name8" type="Label" parent="Panel/TQHighScore"]
+visible = false
 margin_left = 143.0
 margin_top = 486.0
 margin_right = 494.0
@@ -446,6 +448,7 @@ __meta__ = {
 }
 
 [node name="Score8" type="Label" parent="Panel/TQHighScore"]
+visible = false
 margin_left = 492.0
 margin_top = 486.0
 margin_right = 843.0
