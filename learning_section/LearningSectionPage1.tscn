@@ -118,7 +118,7 @@ text = "Pause"
 align = 1
 valign = 1
 
-[node name="PreviousPageButton" type="TextureButton" parent="." index="6"]
+[node name="PreviousPage1Button" type="TextureButton" parent="." index="6"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -129,7 +129,7 @@ margin_right = -30.0
 texture_normal = ExtResource( 3 )
 texture_hover = ExtResource( 5 )
 
-[node name="NextPageButton" type="TextureButton" parent="." index="7"]
+[node name="NextPage1Button" type="TextureButton" parent="." index="7"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -159,4 +159,4 @@ text = "1 / 10"
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="Panel/PlayButton" to="." method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="Panel/PauseButton" to="." method="_on_PauseButton_pressed"]
-[connection signal="pressed" from="NextPageButton" to="." method="_on_NextPageButton_pressed"]
+[connection signal="pressed" from="NextPage1Button" to="." method="_on_NextPage1Button_pressed"]

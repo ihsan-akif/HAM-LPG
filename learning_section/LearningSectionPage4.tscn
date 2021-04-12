@@ -1,0 +1,158 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://main_menu/fonts/lilita_one_20.tres" type="DynamicFont" id=1]
+[ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scene/Scene.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Buttons/LeftBtn.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Buttons/RightBtn.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Buttons/RightHoverBtn.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Buttons/LeftHoverBtn.png" type="Texture" id=9]
+
+[node name="LearningSection2" instance=ExtResource( 3 )]
+
+[node name="TextureRect" type="TextureRect" parent="." index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" parent="." index="1"]
+visible = false
+
+[node name="Button" type="Button" parent="." index="2"]
+visible = false
+margin_left = 46.7936
+margin_top = 29.0775
+margin_right = 121.794
+margin_bottom = 130.077
+custom_fonts/font = ExtResource( 2 )
+text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="." index="3"]
+visible = false
+margin_right = 125.0
+margin_bottom = 126.0
+texture_normal = ExtResource( 4 )
+
+[node name="PreviousPage4Button" type="TextureButton" parent="." index="4"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -151.955
+margin_top = -84.0
+margin_right = -65.0
+texture_normal = ExtResource( 6 )
+texture_hover = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextPage4Button" type="TextureButton" parent="." index="5"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 38.3134
+margin_top = -84.0
+margin_right = 122.313
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="." index="6"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -45.0557
+margin_top = -58.7017
+margin_right = 30.9443
+margin_bottom = -23.7017
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "4 / 10"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="." index="7"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -600.0
+margin_top = -330.0
+margin_right = 600.0
+margin_bottom = 270.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel" index="0"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -138.5
+margin_right = 138.5
+margin_bottom = 35.0
+custom_fonts/font = ExtResource( 2 )
+text = "Agama"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel" index="1"]
+margin_top = 90.0
+margin_right = 540.0
+margin_bottom = 197.0
+custom_fonts/font = ExtResource( 1 )
+text = "Agama rasmi bagi kaum melayu ialah agama Islam.
+Lebih kurang 99.9% orang Melayu moden adalah penganut Islam dari
+mazhab Sunnah Waljamaah."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Panel" index="2"]
+margin_top = 226.0
+margin_right = 597.0
+margin_bottom = 358.0
+custom_fonts/font = ExtResource( 1 )
+text = "Bagi kaum Cina pula, kebanyakan orang Cina di Malaysia
+dikategorikan sebagai penganut agama Buddha dan Taoism.
+ Secara tipikalnya, orang Cina mengamalkan
+ sejenis agama integrasi nilai-nilai agama rakyat Cina, Buddha,
+Taoism, Konfusianisme , dan penyembahan nenek moyang."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="Panel" index="3"]
+margin_top = 426.0
+margin_right = 693.0
+margin_bottom = 558.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kebanyakan kaum India Malaysia beragama Hindu dan diikuti Kristian dan Islam.
+Terdapat juga komuniti Punjabi yang beragama Sikh.
+Jumlah penduduk Hindu lebih kurang 1,904,578 atau 6.93%
+daripada jumlah penduduk Malaysia.
+Terdapat juga 132,379 Kristian,91,273 Islam dan 81,870 lain-lain."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="PreviousPage4Button" to="." method="_on_PreviousPage4Button_pressed"]

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game_section/drag_and_drop/DropZone.gd" type="Script" id=1]
+
+[node name="DropZone" type="Position2D" groups=[
+"mooncake",
+"nasi_lemak",
+"zone",
+]]
+script = ExtResource( 1 )

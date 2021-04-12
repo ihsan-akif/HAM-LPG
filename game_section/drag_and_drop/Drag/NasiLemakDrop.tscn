@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game_section/drag_and_drop/Drag/NasiLemakDrop.gd" type="Script" id=1]
+
+[node name="Position2D" type="Position2D" groups=[
+"nasi_lemak",
+]]
+script = ExtResource( 1 )

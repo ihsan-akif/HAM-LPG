@@ -1,0 +1,101 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://game_section/drag_and_drop/Drag/MooncakeDrag.tscn" type="PackedScene" id=1]
+[ext_resource path="res://game_section/drag_and_drop/Drag/NasiLemakDrag.tscn" type="PackedScene" id=2]
+[ext_resource path="res://game_section/drag_and_drop/Drag/MooncakeDrop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://game_section/drag_and_drop/Drag/NasiLemakDrop.tscn" type="PackedScene" id=4]
+[ext_resource path="res://game_section/drag_and_drop/Drag/MooncakeAns.tscn" type="PackedScene" id=5]
+[ext_resource path="res://game_section/drag_and_drop/Drag/RotiCanaiDrag.tscn" type="PackedScene" id=6]
+[ext_resource path="res://game_section/drag_and_drop/Drag/RotiCanaiDrop.tscn" type="PackedScene" id=7]
+[ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=9]
+[ext_resource path="res://game_section/drag_and_drop/Level1.gd" type="Script" id=10]
+
+[node name="Level1" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="MoonStart" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( 1100.02, 245.11 )
+
+[node name="NasiLemakStart" parent="." instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 154.495, 232.736 )
+
+[node name="RotiCanaiStart" parent="." instance=ExtResource( 7 )]
+visible = false
+position = Vector2( 617.848, 235.335 )
+
+[node name="MoonAns" parent="." instance=ExtResource( 5 )]
+position = Vector2( 614.09, 528 )
+
+[node name="NasiLemakAns" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1102.73, 528 )
+
+[node name="RotiCanaiDrop" parent="." instance=ExtResource( 7 )]
+position = Vector2( 149.777, 528 )
+
+[node name="MooncakeDrag" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1099.92, 245.475 )
+
+[node name="NasiLemakDrag" parent="." instance=ExtResource( 2 )]
+position = Vector2( 154.896, 232.127 )
+
+[node name="RotiCanaiDrag" parent="." instance=ExtResource( 6 )]
+position = Vector2( 618.747, 235.37 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 44.7612
+margin_top = 639.78
+margin_right = 284.761
+margin_bottom = 695.78
+custom_fonts/font = ExtResource( 8 )
+text = "Kaum India"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 207.104
+margin_top = 26.1232
+margin_right = 1140.1
+margin_bottom = 82.1232
+custom_fonts/font = ExtResource( 8 )
+text = "Pilih makanan tradisi bagi tiga kaum berikut?"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 508.761
+margin_top = 639.78
+margin_right = 729.761
+margin_bottom = 695.78
+custom_fonts/font = ExtResource( 8 )
+text = "Kaum Cina"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 953.76
+margin_top = 639.78
+margin_right = 1238.76
+margin_bottom = 695.78
+custom_fonts/font = ExtResource( 8 )
+text = "Kaum Melayu"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

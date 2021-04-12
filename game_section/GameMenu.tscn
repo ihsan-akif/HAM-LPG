@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scene/Scene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Images/Background/Background 2.png" type="Texture" id=2]
@@ -6,8 +6,11 @@
 [ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=4]
 [ext_resource path="res://game_section/Images/CrosswordIcon.png" type="Texture" id=5]
 [ext_resource path="res://game_section/Images/DragAndDropIcon.png" type="Texture" id=6]
+[ext_resource path="res://game_section/GameMenu.gd" type="Script" id=7]
+[ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=8]
 
 [node name="GameSection" instance=ExtResource( 1 )]
+script = ExtResource( 7 )
 
 [node name="Background" type="TextureRect" parent="." index="0"]
 anchor_right = 1.0
@@ -82,4 +85,39 @@ texture = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="DragAndDropBtn" type="Button" parent="." index="6"]
+margin_left = 221.966
+margin_top = 498.929
+margin_right = 433.966
+margin_bottom = 561.929
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="DragAndDropBtn" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 8 )
+text = "Drag And Drop"
+align = 1
+valign = 1
+
+[node name="CrosswordBtn" type="Button" parent="." index="7"]
+margin_left = 855.966
+margin_top = 498.929
+margin_right = 1067.97
+margin_bottom = 561.929
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CrosswordBtn" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 8 )
+text = "Crossword"
+align = 1
+valign = 1
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="DragAndDropBtn" to="." method="_on_DragAndDropBtn_pressed"]
