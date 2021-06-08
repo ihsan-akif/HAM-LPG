@@ -180,3 +180,4 @@ visible = false
 [connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
 [connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
 [connection signal="pressed" from="ClearBtn" to="." method="_on_ClearBtn_pressed"]
+[connection signal="pressed" from="SubmitBtn" to="." method="_on_SubmitBtn_pressed"]
