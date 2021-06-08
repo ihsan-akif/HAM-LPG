@@ -1,95 +1,16 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://game_section/drag_and_drop/Drag/MooncakeDrag.tscn" type="PackedScene" id=1]
-[ext_resource path="res://game_section/drag_and_drop/Drag/NasiLemakDrag.tscn" type="PackedScene" id=2]
-[ext_resource path="res://game_section/drag_and_drop/Drag/MooncakeDrop.tscn" type="PackedScene" id=3]
-[ext_resource path="res://game_section/drag_and_drop/Drag/NasiLemakDrop.tscn" type="PackedScene" id=4]
-[ext_resource path="res://game_section/drag_and_drop/Drag/MooncakeAns.tscn" type="PackedScene" id=5]
-[ext_resource path="res://game_section/drag_and_drop/Drag/RotiCanaiDrag.tscn" type="PackedScene" id=6]
-[ext_resource path="res://game_section/drag_and_drop/Drag/RotiCanaiDrop.tscn" type="PackedScene" id=7]
+[ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=1]
+[ext_resource path="res://learning_section/Images/TraditionalFood/RotiCanai.png" type="Texture" id=2]
+[ext_resource path="res://learning_section/Images/TraditionalFood/NasiLemak.png" type="Texture" id=3]
+[ext_resource path="res://learning_section/Images/TraditionalFood/Mooncake.png" type="Texture" id=4]
+[ext_resource path="res://game_section/Images/Blank.png" type="Texture" id=5]
 [ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=8]
 [ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=9]
 [ext_resource path="res://game_section/drag_and_drop/Level1.gd" type="Script" id=10]
 
-[node name="Level1" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 script = ExtResource( 10 )
-
-[node name="MoonStart" parent="." instance=ExtResource( 3 )]
-visible = false
-position = Vector2( 1100.02, 245.11 )
-
-[node name="NasiLemakStart" parent="." instance=ExtResource( 4 )]
-visible = false
-position = Vector2( 154.495, 232.736 )
-
-[node name="RotiCanaiStart" parent="." instance=ExtResource( 7 )]
-visible = false
-position = Vector2( 617.848, 235.335 )
-
-[node name="MoonAns" parent="." instance=ExtResource( 5 )]
-position = Vector2( 614.09, 528 )
-
-[node name="NasiLemakAns" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1102.73, 528 )
-
-[node name="RotiCanaiDrop" parent="." instance=ExtResource( 7 )]
-position = Vector2( 149.777, 528 )
-
-[node name="MooncakeDrag" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1099.92, 245.475 )
-
-[node name="NasiLemakDrag" parent="." instance=ExtResource( 2 )]
-position = Vector2( 154.896, 232.127 )
-
-[node name="RotiCanaiDrag" parent="." instance=ExtResource( 6 )]
-position = Vector2( 618.747, 235.37 )
-
-[node name="Label" type="Label" parent="."]
-margin_left = 44.7612
-margin_top = 639.78
-margin_right = 284.761
-margin_bottom = 695.78
-custom_fonts/font = ExtResource( 8 )
-text = "Kaum India"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label4" type="Label" parent="."]
-margin_left = 207.104
-margin_top = 26.1232
-margin_right = 1140.1
-margin_bottom = 82.1232
-custom_fonts/font = ExtResource( 8 )
-text = "Pilih makanan tradisi bagi tiga kaum berikut?"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label2" type="Label" parent="."]
-margin_left = 508.761
-margin_top = 639.78
-margin_right = 729.761
-margin_bottom = 695.78
-custom_fonts/font = ExtResource( 8 )
-text = "Kaum Cina"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label3" type="Label" parent="."]
-margin_left = 953.76
-margin_top = 639.78
-margin_right = 1238.76
-margin_bottom = 695.78
-custom_fonts/font = ExtResource( 8 )
-text = "Kaum Melayu"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TextureButton" type="TextureButton" parent="."]
 margin_right = 40.0
@@ -98,4 +19,164 @@ texture_normal = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 212.927
+margin_top = 33.7361
+margin_right = 1115.93
+margin_bottom = 89.7361
+custom_fonts/font = ExtResource( 8 )
+text = "Pilih makanan tradisi bagi tiga kaum berikut"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 112.633
+margin_top = 552.878
+margin_right = 264.633
+margin_bottom = 593.878
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum India"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 561.041
+margin_top = 558.0
+margin_right = 700.041
+margin_bottom = 593.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum Cina"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 965.0
+margin_top = 558.0
+margin_right = 1144.0
+margin_bottom = 593.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum Melayu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" type="Button" parent="."]
+margin_left = 101.823
+margin_top = 138.191
+margin_right = 270.823
+margin_bottom = 270.191
+text = "1"
+icon = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 541.823
+margin_top = 138.191
+margin_right = 710.823
+margin_bottom = 270.191
+text = "2"
+icon = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 965.823
+margin_top = 138.191
+margin_right = 1134.82
+margin_bottom = 270.191
+text = "3"
+icon = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 100.823
+margin_top = 378.191
+margin_right = 269.823
+margin_bottom = 510.191
+icon = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 540.823
+margin_top = 378.191
+margin_right = 709.823
+margin_bottom = 510.191
+icon = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button6" type="Button" parent="."]
+margin_left = 964.823
+margin_top = 378.191
+margin_right = 1133.82
+margin_bottom = 510.191
+icon = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClearBtn" type="Button" parent="."]
+margin_left = 498.632
+margin_top = 660.008
+margin_right = 600.632
+margin_bottom = 701.008
+custom_fonts/font = ExtResource( 1 )
+text = "Padam"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SubmitBtn" type="Button" parent="."]
+margin_left = 655.065
+margin_top = 660.008
+margin_right = 759.065
+margin_bottom = 701.008
+custom_fonts/font = ExtResource( 1 )
+text = "Selesai"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite1" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 2 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 4 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+visible = false
+
+[node name="Sprite5" type="Sprite" parent="."]
+visible = false
+
+[node name="Sprite6" type="Sprite" parent="."]
+visible = false
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="Button1" to="." method="_on_Button1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
+[connection signal="pressed" from="ClearBtn" to="." method="_on_ClearBtn_pressed"]
