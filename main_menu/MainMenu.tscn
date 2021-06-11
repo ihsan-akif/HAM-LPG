@@ -31,25 +31,31 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Menu" type="VBoxContainer" parent="."]
+[node name="Title" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 50.0
-margin_right = -50.0
+margin_left = 252.269
+margin_top = 1.68179
+margin_right = 982.269
+margin_bottom = 15.6818
+rect_scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )
+stretch_mode = 4
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Title" type="TextureRect" parent="Menu"]
-margin_right = 1180.0
-margin_bottom = 289.0
-texture = ExtResource( 3 )
-stretch_mode = 4
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 293.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="UpperButton" type="HBoxContainer" parent="Menu"]
-margin_top = 293.0
-margin_right = 1180.0
-margin_bottom = 504.0
+margin_right = 1280.0
+margin_bottom = 211.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
@@ -80,8 +86,8 @@ margin_bottom = 70.0
 scene_to_load = "res://learning_section/LearningSectionPage1.tscn"
 
 [node name="ButtonIcon2" type="VBoxContainer" parent="Menu/UpperButton"]
-margin_left = 410.0
-margin_right = 770.0
+margin_left = 460.0
+margin_right = 820.0
 margin_bottom = 211.0
 size_flags_horizontal = 2
 __meta__ = {
@@ -110,8 +116,8 @@ margin_bottom = 70.0
 scene_to_load = "res://trivia_question/TriviaQuestions.tscn"
 
 [node name="ButtonIcon3" type="VBoxContainer" parent="Menu/UpperButton"]
-margin_left = 820.0
-margin_right = 1180.0
+margin_left = 920.0
+margin_right = 1280.0
 margin_bottom = 211.0
 
 [node name="GameSectionPng" type="TextureRect" parent="Menu/UpperButton/ButtonIcon3"]
@@ -136,9 +142,9 @@ margin_bottom = 70.0
 scene_to_load = "res://game_section/GameMenu.tscn"
 
 [node name="LowerButton" type="HBoxContainer" parent="Menu"]
-margin_top = 508.0
-margin_right = 1180.0
-margin_bottom = 720.0
+margin_top = 215.0
+margin_right = 1280.0
+margin_bottom = 427.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
@@ -147,8 +153,8 @@ __meta__ = {
 }
 
 [node name="ButtonIcon4" type="VBoxContainer" parent="Menu/LowerButton"]
-margin_left = 228.0
-margin_right = 588.0
+margin_left = 278.0
+margin_right = 638.0
 margin_bottom = 212.0
 alignment = 1
 
@@ -174,8 +180,8 @@ margin_bottom = 71.0
 scene_to_load = "res://leaderboard/Leaderboard.tscn"
 
 [node name="ButtonIcon5" type="VBoxContainer" parent="Menu/LowerButton"]
-margin_left = 592.0
-margin_right = 952.0
+margin_left = 642.0
+margin_right = 1002.0
 margin_bottom = 212.0
 alignment = 1
 

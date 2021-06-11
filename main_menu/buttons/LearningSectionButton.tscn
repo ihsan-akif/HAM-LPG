@@ -4,11 +4,13 @@
 [ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=2]
 
 [node name="LearningSectionButton" instance=ExtResource( 1 )]
+margin_bottom = 113.0
 custom_fonts/font = ExtResource( 2 )
 scene_to_load = "res://scene/LearningSection.tscn"
 
 [node name="Label" parent="." index="0"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-text = "Learning Section"
+text = "Bahagian
+Pembelajaran"
 valign = 1

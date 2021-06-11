@@ -9,4 +9,4 @@ scene_to_load = "res://scene/Settings.tscn"
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_colors/font_color_shadow = Color( 1, 0.647059, 0, 1 )
-text = "Settings"
+text = "Tetapan"

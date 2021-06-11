@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scene/Scene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Videos/Introduction Video.webm" type="VideoStream" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=8]
 [ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=9]
 [ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Buttons/RightArrow.png" type="Texture" id=11]
 
 [node name="LearningSection" instance=ExtResource( 1 )]
 
@@ -55,7 +56,7 @@ custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color_shadow = Color( 1, 0, 0, 1 )
 custom_constants/shadow_offset_x = 0
 custom_constants/shadow_offset_y = 5
-text = "Learning Section"
+text = "Bahagian Pembelajaran"
 align = 1
 valign = 1
 __meta__ = {
@@ -93,7 +94,7 @@ margin_bottom = -2.84338
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 9 )
-text = "Play"
+text = "Main"
 align = 1
 valign = 1
 __meta__ = {
@@ -105,16 +106,16 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 62.8832
-margin_top = -52.7244
-margin_right = 143.883
-margin_bottom = -2.72443
+margin_left = 63.0
+margin_top = -53.0
+margin_right = 181.0
+margin_bottom = -3.0
 
 [node name="Label" type="Label" parent="Panel/PauseButton" index="0"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 9 )
-text = "Pause"
+text = "Berhenti"
 align = 1
 valign = 1
 
@@ -155,6 +156,33 @@ margin_bottom = -23.7017
 custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "1 / 10"
+
+[node name="Panel2" type="Panel" parent="." index="9"]
+margin_left = 26.0
+margin_top = 209.0
+margin_right = 286.0
+margin_bottom = 360.0
+
+[node name="Label3" type="Label" parent="Panel2" index="0"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 9 )
+text = "Video pengenalan 
+kaum  Melayu,
+India, dan Cina"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="." index="10"]
+margin_left = 124.883
+margin_top = 366.391
+margin_right = 645.883
+margin_bottom = 892.391
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 11 )
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="Panel/PlayButton" to="." method="_on_PlayButton_pressed"]
