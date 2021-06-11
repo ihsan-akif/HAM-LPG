@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://main_menu/fonts/lilita_one_20.tres" type="DynamicFont" id=1]
 [ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=2]
@@ -9,6 +9,10 @@
 [ext_resource path="res://Assets/Buttons/RightBtn.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Buttons/RightHoverBtn.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Buttons/LeftHoverBtn.png" type="Texture" id=9]
+[ext_resource path="res://learning_section/Images/Cartoon/Cartoon2.png" type="Texture" id=10]
+[ext_resource path="res://learning_section/Images/Cartoon/Cartoon5.png" type="Texture" id=11]
+[ext_resource path="res://learning_section/Images/Cartoon/Cartoon4.png" type="Texture" id=12]
+[ext_resource path="res://learning_section/Images/Cartoon/Cartoon3.png" type="Texture" id=13]
 
 [node name="LearningSection2" instance=ExtResource( 3 )]
 
@@ -41,7 +45,7 @@ margin_right = 125.0
 margin_bottom = 126.0
 texture_normal = ExtResource( 4 )
 
-[node name="PreviousPage4Button" type="TextureButton" parent="." index="4"]
+[node name="PreviousPage6Button" type="TextureButton" parent="." index="4"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -55,7 +59,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NextPage4Button" type="TextureButton" parent="." index="5"]
+[node name="NextPage6Button" type="TextureButton" parent="." index="5"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -80,7 +84,7 @@ margin_right = 30.9443
 margin_bottom = -23.7017
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "4 / 10"
+text = "6 / 10"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -112,47 +116,111 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="Panel" index="1"]
-margin_top = 90.0
-margin_right = 540.0
-margin_bottom = 197.0
+margin_left = 80.9514
+margin_top = 96.2379
+margin_right = 523.951
+margin_bottom = 120.238
 custom_fonts/font = ExtResource( 1 )
-text = "Agama rasmi bagi kaum melayu ialah agama Islam.
-Lebih kurang 99.9% orang Melayu moden adalah penganut Islam dari
-mazhab Sunnah Waljamaah."
+text = "1. Agama rasmi bagi kaum melayu ialah agama Islam"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label3" type="Label" parent="Panel" index="2"]
-margin_top = 226.0
-margin_right = 597.0
-margin_bottom = 358.0
+margin_left = 81.0564
+margin_top = 160.713
+margin_right = 602.056
+margin_bottom = 211.713
 custom_fonts/font = ExtResource( 1 )
-text = "Bagi kaum Cina pula, kebanyakan orang Cina di Malaysia
-dikategorikan sebagai penganut agama Buddha dan Taoism.
- Secara tipikalnya, orang Cina mengamalkan
- sejenis agama integrasi nilai-nilai agama rakyat Cina, Buddha,
-Taoism, Konfusianisme , dan penyembahan nenek moyang."
-align = 1
+text = "2. Kaum Cina pula, kebanyakan orang Cina di Malaysia
+     dikategorikan sebagai penganut agama Buddha dan Taoism"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label4" type="Label" parent="Panel" index="3"]
-margin_top = 426.0
-margin_right = 693.0
-margin_bottom = 558.0
+margin_left = 81.7014
+margin_top = 261.267
+margin_right = 789.701
+margin_bottom = 285.267
 custom_fonts/font = ExtResource( 1 )
-text = "Kebanyakan kaum India Malaysia beragama Hindu dan diikuti Kristian dan Islam.
-Terdapat juga komuniti Punjabi yang beragama Sikh.
-Jumlah penduduk Hindu lebih kurang 1,904,578 atau 6.93%
-daripada jumlah penduduk Malaysia.
-Terdapat juga 132,379 Kristian, 91,273 Islam dan 81,870 lain-lain."
+text = "3. Kebanyakan kaum India Malaysia beragama Hindu dan diikuti Kristian dan Islam"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label5" type="Label" parent="Panel" index="4"]
+margin_left = 82.519
+margin_top = 332.4
+margin_right = 629.519
+margin_bottom = 356.4
+custom_fonts/font = ExtResource( 1 )
+text = "4. Kebanyakan kaum Kadazan-Dusun menganuti agama Kristian"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="Panel" index="5"]
+margin_left = 84.3451
+margin_top = 397.822
+margin_right = 746.345
+margin_bottom = 448.822
+custom_fonts/font = ExtResource( 1 )
+text = "5. Masyarakat Melanau merupakan suku yang beragama Islam dan Kristian
+     namun terdapat juga yang mempercayai makhluk ghaib yang dipanggil Ipok"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="Panel" index="6"]
+margin_left = 82.9979
+margin_top = 488.288
+margin_right = 464.998
+margin_bottom = 512.288
+custom_fonts/font = ExtResource( 1 )
+text = "6. Kebanyakan kaum Iban beragama Kristian"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="." index="8"]
+margin_left = 627.916
+margin_top = 82.8978
+margin_right = 1150.92
+margin_bottom = 277.898
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 10 )
+
+[node name="TextureRect3" type="TextureRect" parent="." index="9"]
+margin_left = 952.792
+margin_top = 104.528
+margin_right = 1475.79
+margin_bottom = 629.528
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 13 )
+
+[node name="TextureRect4" type="TextureRect" parent="." index="10"]
+margin_left = 895.838
+margin_top = 292.1
+margin_right = 1808.84
+margin_bottom = 801.1
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 12 )
+expand = true
+
+[node name="TextureRect5" type="TextureRect" parent="." index="11"]
+margin_left = 897.494
+margin_top = 463.227
+margin_right = 1810.49
+margin_bottom = 972.227
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 11 )
+expand = true
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
-[connection signal="pressed" from="PreviousPage4Button" to="." method="_on_PreviousPage4Button_pressed"]
+[connection signal="pressed" from="PreviousPage6Button" to="." method="_on_PreviousPage6Button_pressed"]
+[connection signal="pressed" from="NextPage6Button" to="." method="_on_NextPage6Button_pressed"]

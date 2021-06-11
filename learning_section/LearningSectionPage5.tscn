@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://main_menu/fonts/lilita_one_20.tres" type="DynamicFont" id=1]
 [ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Assets/Buttons/RightBtn.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Buttons/RightHoverBtn.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Buttons/LeftHoverBtn.png" type="Texture" id=9]
+[ext_resource path="res://learning_section/Images/Dialog/Dialog1.png" type="Texture" id=10]
+[ext_resource path="res://learning_section/Images/Cartoon/Cartoon1.png" type="Texture" id=11]
 
 [node name="LearningSection2" instance=ExtResource( 3 )]
 
@@ -41,7 +43,7 @@ margin_right = 125.0
 margin_bottom = 126.0
 texture_normal = ExtResource( 4 )
 
-[node name="PreviousPage3Button" type="TextureButton" parent="." index="4"]
+[node name="PreviousPage5Button" type="TextureButton" parent="." index="4"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -55,7 +57,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NextPage3Button" type="TextureButton" parent="." index="5"]
+[node name="NextPage5Button" type="TextureButton" parent="." index="5"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -80,7 +82,7 @@ margin_right = 30.9443
 margin_bottom = -23.7017
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "3 / 10"
+text = "5 / 10"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -112,45 +114,94 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="Panel" index="1"]
-margin_left = 307.0
-margin_top = 90.0
-margin_right = 894.0
-margin_bottom = 197.0
+margin_left = 340.0
+margin_top = 144.0
+margin_right = 906.0
+margin_bottom = 168.0
 custom_fonts/font = ExtResource( 1 )
-text = "Kaum Melayu menggunakan Bahasa Melayu
-sebagai bahasa pengantar. Bahasa Melayu juga adalah bahasa rasmi
-di Malaysia."
+text = "Kaum Melayu menggunakan Bahasa Melayu (Bahasa Kebangsaan)"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label3" type="Label" parent="Panel" index="2"]
-margin_left = 112.0
-margin_top = 226.0
-margin_right = 1099.0
-margin_bottom = 358.0
+margin_left = 340.0
+margin_top = 176.0
+margin_right = 708.0
+margin_bottom = 200.0
 custom_fonts/font = ExtResource( 1 )
-text = "Kaum Cina Malaysia menggunakan Bahasa Mandarin sebagai bahasa komunikasi antara mereka.
-Mereka juga akan menggunakan bahasa dialek dalam komunikasi antara suku dialek yang sama.
-Bahasa dialek utama Masyarakat Cina adalah Bahasa Hokkien, Bahasa Kantonis, Bahasa Hakka dan Bahasa Teochew."
+text = "Kaum Cina menggunakan Bahasa Mandarin"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label4" type="Label" parent="Panel" index="3"]
-margin_left = 256.0
-margin_top = 370.0
-margin_right = 949.0
-margin_bottom = 394.0
+margin_left = 339.755
+margin_top = 208.02
+margin_right = 678.755
+margin_bottom = 232.02
 custom_fonts/font = ExtResource( 1 )
-text = "Kaum India pula menggunakan Bahasa Tamil sebagai bahasa pengantar. "
+text = "Kaum India menggunakan Bahasa Tamil"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Label5" type="Label" parent="Panel" index="4"]
+margin_left = 339.755
+margin_top = 240.02
+margin_right = 862.755
+margin_bottom = 264.02
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum Kadazan-Dusun menggunakan Bahasa Kadazan-Dusun"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="Panel" index="5"]
+margin_left = 340.0
+margin_top = 272.0
+margin_right = 855.0
+margin_bottom = 296.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum Melanau menggunakan Bahasa Melanau (Matu/Daro)"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="Panel" index="6"]
+margin_left = 340.0
+margin_top = 304.0
+margin_right = 667.0
+margin_bottom = 328.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum Iban menggunakan Bahasa Iban"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="." index="8"]
+margin_left = 430.075
+margin_top = 453.306
+margin_right = 951.075
+margin_bottom = 977.306
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 11 )
+
+[node name="TextureRect3" type="TextureRect" parent="." index="9"]
+margin_left = 227.409
+margin_top = 68.8978
+margin_right = 2869.41
+margin_bottom = 1614.9
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 10 )
+expand = true
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
-[connection signal="pressed" from="PreviousPage3Button" to="." method="_on_PreviousPage3Button_pressed"]
-[connection signal="pressed" from="NextPage3Button" to="." method="_on_NextPage3Button_pressed"]
+[connection signal="pressed" from="PreviousPage5Button" to="." method="_on_PreviousPage5Button_pressed"]
+[connection signal="pressed" from="NextPage5Button" to="." method="_on_NextPage5Button_pressed"]

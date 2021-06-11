@@ -50,7 +50,7 @@ margin_right = 125.0
 margin_bottom = 126.0
 texture_normal = ExtResource( 4 )
 
-[node name="PreviousPage2Button" type="TextureButton" parent="." index="4"]
+[node name="PreviousPage3Button" type="TextureButton" parent="." index="4"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -64,7 +64,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="NextPage2Button" type="TextureButton" parent="." index="5"]
+[node name="NextPage3Button" type="TextureButton" parent="." index="5"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -337,5 +337,5 @@ text = "Nasi Beriani"
 align = 1
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
-[connection signal="pressed" from="PreviousPage2Button" to="." method="_on_PreviousPage2Button_pressed"]
-[connection signal="pressed" from="NextPage2Button" to="." method="_on_NextPage2Button_pressed"]
+[connection signal="pressed" from="PreviousPage3Button" to="." method="_on_PreviousPage3Button_pressed"]
+[connection signal="pressed" from="NextPage3Button" to="." method="_on_NextPage3Button_pressed"]

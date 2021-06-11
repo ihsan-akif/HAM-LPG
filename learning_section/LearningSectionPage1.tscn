@@ -1,10 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scene/Scene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Videos/Introduction Video.webm" type="VideoStream" id=2]
-[ext_resource path="res://Assets/Buttons/LeftBtn.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Buttons/LeftHoverBtn.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Buttons/RightHoverBtn.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Buttons/RightBtn.png" type="Texture" id=7]
 [ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=8]
@@ -119,18 +117,7 @@ text = "Berhenti"
 align = 1
 valign = 1
 
-[node name="PreviousPage1Button" type="TextureButton" parent="." index="6"]
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -116.955
-margin_top = -84.0
-margin_right = -30.0
-texture_normal = ExtResource( 3 )
-texture_hover = ExtResource( 5 )
-
-[node name="NextPage1Button" type="TextureButton" parent="." index="7"]
+[node name="NextPage1Button" type="TextureButton" parent="." index="6"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -144,7 +131,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="." index="8"]
+[node name="Label2" type="Label" parent="." index="7"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -157,7 +144,7 @@ custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "1 / 10"
 
-[node name="Panel2" type="Panel" parent="." index="9"]
+[node name="Panel2" type="Panel" parent="." index="8"]
 margin_left = 26.0
 margin_top = 209.0
 margin_right = 286.0
@@ -176,7 +163,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect2" type="TextureRect" parent="." index="10"]
+[node name="TextureRect2" type="TextureRect" parent="." index="9"]
 margin_left = 124.883
 margin_top = 366.391
 margin_right = 645.883
