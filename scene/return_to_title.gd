@@ -84,4 +84,52 @@ func _on_PreviousPage9Button_pressed():
 
 
 func _on_NextPage9Button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://learning_section/LearningSectionPage10.tscn")
+
+
+func _on_PreviousPage10Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage9.tscn")
+
+
+func _on_NextPage10Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage11.tscn")
+
+
+func _on_PreviousPage11Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage10.tscn")
+
+
+func _on_NextPage11Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage12.tscn")
+
+
+func _on_PreviousPage12Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage11.tscn")
+
+
+func _on_NextPage12Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage13.tscn")
+
+
+func _on_PreviousPage13Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage12.tscn")
+
+
+func _on_NextPage13Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage14.tscn")
+
+
+func _on_PreviousPage14Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage13.tscn")
+
+
+func _on_NextPage14Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage15.tscn")
+
+
+func _on_PreviousPage15Button_pressed():
+	get_tree().change_scene("res://learning_section/LearningSectionPage14.tscn")
+
+
+func _on_BackToMenuBtn_pressed():
+	get_tree().change_scene("res://main_menu/MainMenu.tscn")

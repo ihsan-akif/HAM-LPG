@@ -83,13 +83,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -45.0557
+margin_left = -53.0557
 margin_top = -58.7017
-margin_right = 30.9443
+margin_right = 22.9443
 margin_bottom = -23.7017
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "4 / 10"
+text = "4 / 15"
 __meta__ = {
 "_edit_use_anchors_": false
 }

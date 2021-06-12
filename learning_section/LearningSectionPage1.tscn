@@ -142,7 +142,7 @@ margin_right = 55.9442
 margin_bottom = -23.7017
 custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "1 / 10"
+text = "1 / 15"
 
 [node name="Panel2" type="Panel" parent="." index="8"]
 margin_left = 26.0
