@@ -8,3 +8,7 @@ func _on_TextureButton_pressed():
 
 func _on_DragAndDropBtn_pressed():
 	get_tree().change_scene("res://game_section/drag_and_drop/Level1.tscn")
+
+
+func _on_CrosswordBtn_pressed():
+	get_tree().change_scene("res://game_section/crossword/Level1.tscn")

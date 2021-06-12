@@ -46,14 +46,15 @@ __meta__ = {
 [node name="Label" type="Label" parent="." index="3"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -137.5
-margin_right = 137.5
-margin_bottom = 56.0
+margin_left = -211.5
+margin_top = 88.0
+margin_right = 211.5
+margin_bottom = 144.0
 custom_fonts/font = ExtResource( 4 )
-custom_colors/font_color_shadow = Color( 1, 1, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.313726, 0.784314, 0.470588, 1 )
 custom_constants/shadow_offset_x = 0
 custom_constants/shadow_offset_y = 5
-text = "Game Section"
+text = "Bahagian Permainan"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -87,10 +88,10 @@ __meta__ = {
 }
 
 [node name="DragAndDropBtn" type="Button" parent="." index="6"]
-margin_left = 221.966
-margin_top = 498.929
-margin_right = 433.966
-margin_bottom = 561.929
+margin_left = 182.0
+margin_top = 507.0
+margin_right = 470.0
+margin_bottom = 629.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -99,15 +100,16 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 8 )
-text = "Drag And Drop"
+text = "Permainan Seret
+dan Lepas"
 align = 1
 valign = 1
 
 [node name="CrosswordBtn" type="Button" parent="." index="7"]
-margin_left = 855.966
-margin_top = 498.929
-margin_right = 1067.97
-margin_bottom = 561.929
+margin_left = 808.605
+margin_top = 507.0
+margin_right = 1096.61
+margin_bottom = 629.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -116,8 +118,10 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 8 )
-text = "Crossword"
+text = "Permainan
+Silang Kata"
 align = 1
 valign = 1
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="DragAndDropBtn" to="." method="_on_DragAndDropBtn_pressed"]
+[connection signal="pressed" from="CrosswordBtn" to="." method="_on_CrosswordBtn_pressed"]

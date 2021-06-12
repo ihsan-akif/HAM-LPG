@@ -1,0 +1,576 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=2]
+[ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=3]
+[ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=4]
+[ext_resource path="res://game_section/crossword/Level1.gd" type="Script" id=5]
+[ext_resource path="res://main_menu/fonts/lilita_one_20.tres" type="DynamicFont" id=6]
+
+[node name="Level1" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+
+[node name="BackBtn" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -306.5
+margin_right = 306.5
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.313726, 0.784314, 0.470588, 1 )
+text = "Selesaikan silang kata berikut"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -500.0
+margin_top = -252.5
+margin_right = 500.0
+margin_bottom = 252.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IbanI" type="TextEdit" parent="Panel"]
+margin_left = 228.859
+margin_top = 198.144
+margin_right = 268.859
+margin_bottom = 238.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IbanB" type="TextEdit" parent="Panel"]
+margin_left = 276.859
+margin_top = 198.144
+margin_right = 316.859
+margin_bottom = 238.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IbanA" type="TextEdit" parent="Panel"]
+margin_left = 324.859
+margin_top = 198.144
+margin_right = 364.859
+margin_bottom = 238.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IbanN" type="TextEdit" parent="Panel"]
+margin_left = 372.859
+margin_top = 198.144
+margin_right = 412.859
+margin_bottom = 238.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IpokP" type="TextEdit" parent="Panel"]
+margin_left = 228.859
+margin_top = 246.144
+margin_right = 268.859
+margin_bottom = 286.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IpokO" type="TextEdit" parent="Panel"]
+margin_left = 228.859
+margin_top = 294.144
+margin_right = 268.859
+margin_bottom = 334.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IpokK" type="TextEdit" parent="Panel"]
+margin_left = 228.859
+margin_top = 342.144
+margin_right = 268.859
+margin_bottom = 382.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CinaC" type="TextEdit" parent="Panel"]
+margin_left = 372.859
+margin_top = 102.144
+margin_right = 412.859
+margin_bottom = 142.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CinaI" type="TextEdit" parent="Panel"]
+margin_left = 372.859
+margin_top = 150.144
+margin_right = 412.859
+margin_bottom = 190.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CinaA" type="TextEdit" parent="Panel"]
+margin_left = 372.859
+margin_top = 246.144
+margin_right = 412.859
+margin_bottom = 286.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CeongsamE" type="TextEdit" parent="Panel"]
+margin_left = 420.859
+margin_top = 102.144
+margin_right = 460.859
+margin_bottom = 142.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CeongsamO" type="TextEdit" parent="Panel"]
+margin_left = 468.859
+margin_top = 102.144
+margin_right = 508.859
+margin_bottom = 142.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CeongsamN" type="TextEdit" parent="Panel"]
+margin_left = 516.859
+margin_top = 102.144
+margin_right = 556.859
+margin_bottom = 142.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CeongsamG" type="TextEdit" parent="Panel"]
+margin_left = 564.859
+margin_top = 102.144
+margin_right = 604.859
+margin_bottom = 142.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CeongsamS" type="TextEdit" parent="Panel"]
+margin_left = 612.859
+margin_top = 102.144
+margin_right = 652.859
+margin_bottom = 142.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CeongsamA" type="TextEdit" parent="Panel"]
+margin_left = 660.859
+margin_top = 102.144
+margin_right = 700.859
+margin_bottom = 142.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CeongsamM" type="TextEdit" parent="Panel"]
+margin_left = 708.859
+margin_top = 102.144
+margin_right = 748.859
+margin_bottom = 142.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SariA" type="TextEdit" parent="Panel"]
+margin_left = 612.859
+margin_top = 150.144
+margin_right = 652.859
+margin_bottom = 190.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SariR" type="TextEdit" parent="Panel"]
+margin_left = 612.859
+margin_top = 198.144
+margin_right = 652.859
+margin_bottom = 238.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SariI" type="TextEdit" parent="Panel"]
+margin_left = 612.859
+margin_top = 246.144
+margin_right = 652.859
+margin_bottom = 286.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TangyuanT" type="TextEdit" parent="Panel"]
+margin_left = 660.859
+margin_top = 54.144
+margin_right = 700.859
+margin_bottom = 94.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TangyuanN" type="TextEdit" parent="Panel"]
+margin_left = 660.859
+margin_top = 150.144
+margin_right = 700.859
+margin_bottom = 190.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TangyuanG" type="TextEdit" parent="Panel"]
+margin_left = 660.859
+margin_top = 198.144
+margin_right = 700.859
+margin_bottom = 238.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TangyuanY" type="TextEdit" parent="Panel"]
+margin_left = 660.859
+margin_top = 246.144
+margin_right = 700.859
+margin_bottom = 286.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TangyuanU" type="TextEdit" parent="Panel"]
+margin_left = 660.859
+margin_top = 294.144
+margin_right = 700.859
+margin_bottom = 334.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TangyuanA" type="TextEdit" parent="Panel"]
+margin_left = 660.859
+margin_top = 342.144
+margin_right = 700.859
+margin_bottom = 382.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TangyuanN2" type="TextEdit" parent="Panel"]
+margin_left = 660.859
+margin_top = 390.144
+margin_right = 700.859
+margin_bottom = 430.144
+custom_fonts/font = ExtResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/background_color = Color( 1, 1, 1, 1 )
+syntax_highlighting = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClearBtn" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.933
+anchor_right = 0.5
+anchor_bottom = 0.933
+margin_left = -51.0
+margin_top = -20.26
+margin_right = 51.0
+margin_bottom = 20.74
+custom_fonts/font = ExtResource( 4 )
+text = "Padam"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuestionBtn" type="Button" parent="."]
+margin_left = 444.189
+margin_top = 651.703
+margin_right = 546.189
+margin_bottom = 692.703
+custom_fonts/font = ExtResource( 4 )
+text = "Soalan"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SubmitBtn" type="Button" parent="."]
+margin_left = 732.189
+margin_top = 651.703
+margin_right = 836.189
+margin_bottom = 692.703
+custom_fonts/font = ExtResource( 4 )
+text = "Selesai"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="."]
+visible = false
+margin_left = 139.0
+margin_top = 108.0
+margin_right = 1195.0
+margin_bottom = 699.0
+
+[node name="Label" type="Label" parent="Panel2"]
+margin_left = 37.0412
+margin_top = 39.2862
+margin_right = 168.041
+margin_bottom = 74.2862
+custom_fonts/font = ExtResource( 4 )
+text = "Mendatar"
+
+[node name="Label2" type="Label" parent="Panel2"]
+margin_left = 37.0412
+margin_top = 199.286
+margin_right = 168.041
+margin_bottom = 234.286
+custom_fonts/font = ExtResource( 4 )
+text = "Menegak"
+
+[node name="Label3" type="Label" parent="Panel2"]
+margin_left = 41.0
+margin_top = 102.0
+margin_right = 450.0
+margin_bottom = 126.0
+custom_fonts/font = ExtResource( 6 )
+text = "1. Kaum ____ adalah kaum terbesar di Sarawak."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="Panel2"]
+margin_left = 41.0
+margin_top = 262.0
+margin_right = 1032.0
+margin_bottom = 313.0
+custom_fonts/font = ExtResource( 6 )
+text = "3. Masyarakat Melanau merupakan suku yang beragama Islam dan Kristian namun terdapat juga yang mempercayai
+     makhluk ghaib yang dipanggil ____"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label6" type="Label" parent="Panel2"]
+margin_left = 41.0
+margin_top = 326.0
+margin_right = 495.0
+margin_bottom = 350.0
+custom_fonts/font = ExtResource( 6 )
+text = "4. Jiaozi adalah makanan tradisional bagi kaum ____"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="Panel2"]
+margin_left = 41.0
+margin_top = 366.0
+margin_right = 607.0
+margin_bottom = 390.0
+custom_fonts/font = ExtResource( 6 )
+text = "5. Baju tradisional kaum India yang dipakai oleh orang perempuan."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label8" type="Label" parent="Panel2"]
+margin_left = 41.0
+margin_top = 406.0
+margin_right = 799.0
+margin_bottom = 430.0
+custom_fonts/font = ExtResource( 6 )
+text = "6. Perayaan Winter Solstice sangat sinonim dengan manisan dikenali sebagai ________"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="Panel2"]
+margin_left = 41.0
+margin_top = 142.0
+margin_right = 599.0
+margin_bottom = 166.0
+custom_fonts/font = ExtResource( 6 )
+text = "2. Baju tradisional kaum Cina yang dipakai oleh orang perempuan."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Panel2"]
+anchor_left = 0.5
+anchor_top = 0.911
+anchor_right = 0.5
+anchor_bottom = 0.911
+margin_left = -43.5
+margin_top = -20.4011
+margin_right = 43.5
+margin_bottom = 20.5989
+custom_fonts/font = ExtResource( 4 )
+text = "Tutup"
+[connection signal="pressed" from="BackBtn" to="." method="_on_BackBtn_pressed"]
+[connection signal="text_changed" from="Panel/IbanI" to="." method="_on_IbanI_text_changed"]
+[connection signal="text_changed" from="Panel/IbanB" to="." method="_on_IbanB_text_changed"]
+[connection signal="text_changed" from="Panel/IbanA" to="." method="_on_IbanA_text_changed"]
+[connection signal="text_changed" from="Panel/IbanN" to="." method="_on_IbanN_text_changed"]
+[connection signal="text_changed" from="Panel/IpokP" to="." method="_on_IpokP_text_changed"]
+[connection signal="text_changed" from="Panel/IpokO" to="." method="_on_IpokO_text_changed"]
+[connection signal="text_changed" from="Panel/IpokK" to="." method="_on_IpokK_text_changed"]
+[connection signal="text_changed" from="Panel/CinaC" to="." method="_on_CinaC_text_changed"]
+[connection signal="text_changed" from="Panel/CinaI" to="." method="_on_CinaI_text_changed"]
+[connection signal="text_changed" from="Panel/CinaA" to="." method="_on_CinaA_text_changed"]
+[connection signal="text_changed" from="Panel/CeongsamE" to="." method="_on_CeongsamE_text_changed"]
+[connection signal="text_changed" from="Panel/CeongsamO" to="." method="_on_CeongsamO_text_changed"]
+[connection signal="text_changed" from="Panel/CeongsamN" to="." method="_on_CeongsamN_text_changed"]
+[connection signal="text_changed" from="Panel/CeongsamG" to="." method="_on_CeongsamG_text_changed"]
+[connection signal="text_changed" from="Panel/CeongsamS" to="." method="_on_CeongsamS_text_changed"]
+[connection signal="text_changed" from="Panel/CeongsamA" to="." method="_on_CeongsamA_text_changed"]
+[connection signal="text_changed" from="Panel/CeongsamM" to="." method="_on_CeongsamM_text_changed"]
+[connection signal="text_changed" from="Panel/SariA" to="." method="_on_SariA_text_changed"]
+[connection signal="text_changed" from="Panel/SariR" to="." method="_on_SariR_text_changed"]
+[connection signal="text_changed" from="Panel/SariI" to="." method="_on_SariI_text_changed"]
+[connection signal="text_changed" from="Panel/TangyuanT" to="." method="_on_TangyuanT_text_changed"]
+[connection signal="text_changed" from="Panel/TangyuanN" to="." method="_on_TangyuanN_text_changed"]
+[connection signal="text_changed" from="Panel/TangyuanG" to="." method="_on_TangyuanG_text_changed"]
+[connection signal="text_changed" from="Panel/TangyuanY" to="." method="_on_TangyuanY_text_changed"]
+[connection signal="text_changed" from="Panel/TangyuanU" to="." method="_on_TangyuanU_text_changed"]
+[connection signal="text_changed" from="Panel/TangyuanA" to="." method="_on_TangyuanA_text_changed"]
+[connection signal="text_changed" from="Panel/TangyuanN2" to="." method="_on_TangyuanN2_text_changed"]
+[connection signal="pressed" from="ClearBtn" to="." method="_on_ClearBtn_pressed"]
+[connection signal="pressed" from="QuestionBtn" to="." method="_on_QuestionBtn_pressed"]
+[connection signal="pressed" from="Panel2/Button" to="." method="_on_Button_pressed"]

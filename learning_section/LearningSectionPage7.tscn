@@ -159,6 +159,7 @@ margin_right = 996.927
 margin_bottom = 120.526
 custom_fonts/font = ExtResource( 2 )
 text = "Kaum Cina"
+align = 1
 
 [node name="TextureRect3" type="TextureRect" parent="Panel" index="7"]
 margin_left = 692.264
