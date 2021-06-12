@@ -573,4 +573,5 @@ text = "Tutup"
 [connection signal="text_changed" from="Panel/TangyuanN2" to="." method="_on_TangyuanN2_text_changed"]
 [connection signal="pressed" from="ClearBtn" to="." method="_on_ClearBtn_pressed"]
 [connection signal="pressed" from="QuestionBtn" to="." method="_on_QuestionBtn_pressed"]
+[connection signal="pressed" from="SubmitBtn" to="." method="_on_SubmitBtn_pressed"]
 [connection signal="pressed" from="Panel2/Button" to="." method="_on_Button_pressed"]

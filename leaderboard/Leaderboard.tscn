@@ -22,14 +22,15 @@ texture = ExtResource( 4 )
 [node name="LeaderboardTxt" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -129.5
-margin_right = 129.5
-margin_bottom = 56.0
+margin_left = -179.0
+margin_top = 32.0
+margin_right = 179.0
+margin_bottom = 88.0
 custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color_shadow = Color( 0, 0.501961, 0, 1 )
 custom_constants/shadow_offset_x = 0
 custom_constants/shadow_offset_y = 5
-text = "Leaderboard"
+text = "Carta Kedudukan"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -43,9 +44,9 @@ __meta__ = {
 }
 
 [node name="TQButton" type="Button" parent="."]
-margin_left = 181.0
+margin_left = 165.0
 margin_top = 113.5
-margin_right = 405.0
+margin_right = 389.0
 margin_bottom = 193.5
 
 [node name="TQLabel" type="Label" parent="TQButton"]
@@ -58,40 +59,34 @@ margin_top = -36.5
 margin_right = 116.0
 margin_bottom = 36.5
 custom_fonts/font = ExtResource( 2 )
-text = "Trivia Question Leaderboard"
+text = "Carta Kedudukan Soalan Trivia"
 align = 1
 valign = 1
 autowrap = true
 
 [node name="DragAndDropButton" type="Button" parent="."]
-margin_left = 541.0
-margin_top = 113.5
-margin_right = 765.0
-margin_bottom = 193.5
+margin_left = 430.0
+margin_top = 114.0
+margin_right = 797.0
+margin_bottom = 194.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="DragAndDropLabel" type="Label" parent="DragAndDropButton"]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -116.0
-margin_top = -36.5
-margin_right = 116.0
-margin_bottom = 36.5
+anchor_right = 1.0
+anchor_bottom = 1.0
 custom_fonts/font = ExtResource( 2 )
-text = "Drag And Drop Leaderboard"
+text = "Carta Kedudukan Permainan Seret dan Lepas"
 align = 1
 valign = 1
 autowrap = true
 
 [node name="CrosswordButton" type="Button" parent="."]
-margin_left = 875.0
-margin_top = 113.5
-margin_right = 1099.0
-margin_bottom = 193.5
+margin_left = 839.0
+margin_top = 114.0
+margin_right = 1115.0
+margin_bottom = 194.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -106,7 +101,7 @@ margin_top = -36.5
 margin_right = 116.0
 margin_bottom = 36.5
 custom_fonts/font = ExtResource( 2 )
-text = "Crossword Leaderboard"
+text = "Carta Kedudukan Permainan Sliang Kata"
 align = 1
 valign = 1
 autowrap = true
@@ -532,3 +527,4 @@ text = "Pilih Carta Kedudukan"
 [connection signal="pressed" from="BackBtn" to="." method="_on_BackBtn_pressed"]
 [connection signal="pressed" from="TQButton" to="." method="_on_TQButton_pressed"]
 [connection signal="pressed" from="DragAndDropButton" to="." method="_on_DragAndDropButton_pressed"]
+[connection signal="pressed" from="CrosswordButton" to="." method="_on_CrosswordButton_pressed"]

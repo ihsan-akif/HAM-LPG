@@ -167,7 +167,7 @@ func _on_Button_pressed():
 
 
 func _on_BackBtn_pressed():
-	# score
+	global.highScoreCW = 0
 	get_tree().change_scene("res://game_section/GameMenu.tscn")
 
 
@@ -199,3 +199,91 @@ func _on_ClearBtn_pressed():
 	get_node("Panel/TangyuanU").set_text("")
 	get_node("Panel/TangyuanA").set_text("")
 	get_node("Panel/TangyuanN2").set_text("")
+
+
+func _on_SubmitBtn_pressed():
+	if get_node("Panel/IbanI").get_text() == "i" or get_node("Panel/IbanI").get_text() == "I":
+		global.highScoreCW += 1
+
+	if get_node("Panel/IbanB").get_text() == "b" or get_node("Panel/IbanB").get_text() == "B":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/IbanA").get_text() == "a" or get_node("Panel/IbanA").get_text() == "A":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/IbanN").get_text() == "n" or get_node("Panel/IbanN").get_text() == "N":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/IpokP").get_text() == "p" or get_node("Panel/IpokP").get_text() == "P":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/IpokO").get_text() == "o" or get_node("Panel/IpokO").get_text() == "O":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/IpokK").get_text() == "k" or get_node("Panel/IpokK").get_text() == "K":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CinaC").get_text() == "c" or get_node("Panel/CinaC").get_text() == "C":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CinaI").get_text() == "i" or get_node("Panel/CinaI").get_text() == "I":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CinaA").get_text() == "a" or get_node("Panel/CinaA").get_text() == "A":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CeongsamE").get_text() == "e" or get_node("Panel/CeongsamE").get_text() == "E":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CeongsamO").get_text() == "o" or get_node("Panel/CeongsamO").get_text() == "O":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CeongsamN").get_text() == "n" or get_node("Panel/CeongsamN").get_text() == "N":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CeongsamG").get_text() == "g" or get_node("Panel/CeongsamG").get_text() == "G":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CeongsamS").get_text() == "s" or get_node("Panel/CeongsamS").get_text() == "S":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CeongsamA").get_text() == "a" or get_node("Panel/CeongsamA").get_text() == "A":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/CeongsamM").get_text() == "m" or get_node("Panel/CeongsamM").get_text() == "M":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/SariA").get_text() == "a" or get_node("Panel/SariA").get_text() == "A":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/SariR").get_text() == "r" or get_node("Panel/SariR").get_text() == "R":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/SariI").get_text() == "i" or get_node("Panel/SariI").get_text() == "I":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/TangyuanT").get_text() == "t" or get_node("Panel/TangyuanT").get_text() == "T":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/TangyuanN").get_text() == "n" or get_node("Panel/TangyuanN").get_text() == "N":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/TangyuanG").get_text() == "g" or get_node("Panel/TangyuanG").get_text() == "G":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/TangyuanY").get_text() == "y" or get_node("Panel/TangyuanY").get_text() == "Y":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/TangyuanU").get_text() == "u" or get_node("Panel/TangyuanU").get_text() == "U":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/TangyuanA").get_text() == "a" or get_node("Panel/TangyuanA").get_text() == "A":
+		global.highScoreCW += 1
+	
+	if get_node("Panel/TangyuanN2").get_text() == "n" or get_node("Panel/TangyuanN2").get_text() == "N":
+		global.highScoreCW += 1
+	
+	global.highScoreCW = (global.highScoreCW / 27) * 100
+	print("Final Score: " + str(int(global.highScoreCW)))
+	
+	get_tree().change_scene("res://game_section/crossword/CWCongratulationScreen.tscn")
