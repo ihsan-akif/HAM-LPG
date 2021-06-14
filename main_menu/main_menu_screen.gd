@@ -4,6 +4,7 @@ var scene_path_to_load
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	MusicController.play_music()
 	
 	# Keyboard support
 	$Menu/UpperButton/ButtonIcon1/Buttons/LearningSectionButton.grab_focus()

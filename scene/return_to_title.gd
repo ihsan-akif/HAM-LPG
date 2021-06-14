@@ -9,6 +9,7 @@ func _on_TextureButton_pressed() -> void:
 
 
 func _on_PlayButton_pressed():
+	MusicController.pause_music()
 	if $Panel/VideoPlayer.paused:
 		$Panel/VideoPlayer.paused = false
 	else:
@@ -17,6 +18,7 @@ func _on_PlayButton_pressed():
 
 func _on_PauseButton_pressed() -> void:
 	$Panel/VideoPlayer.paused = true
+	MusicController.resume_music()
 
 
 func _on_NextPage1Button_pressed():

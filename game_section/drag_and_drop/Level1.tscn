@@ -1,16 +1,25 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=1]
 [ext_resource path="res://learning_section/Images/TraditionalFood/RotiCanai.png" type="Texture" id=2]
 [ext_resource path="res://learning_section/Images/TraditionalFood/NasiLemak.png" type="Texture" id=3]
 [ext_resource path="res://learning_section/Images/TraditionalFood/Mooncake.png" type="Texture" id=4]
 [ext_resource path="res://game_section/Images/Blank.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=6]
 [ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=8]
 [ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=9]
 [ext_resource path="res://game_section/drag_and_drop/Level1.gd" type="Script" id=10]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 10 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="TextureButton" type="TextureButton" parent="."]
 margin_right = 40.0
@@ -29,40 +38,8 @@ margin_top = 33.7361
 margin_right = 1115.93
 margin_bottom = 89.7361
 custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.0823529, 0.239216, 0.827451, 1 )
 text = "Pilih makanan tradisi bagi tiga kaum berikut"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label2" type="Label" parent="."]
-margin_left = 112.633
-margin_top = 552.878
-margin_right = 264.633
-margin_bottom = 593.878
-custom_fonts/font = ExtResource( 1 )
-text = "Kaum India"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label3" type="Label" parent="."]
-margin_left = 561.041
-margin_top = 558.0
-margin_right = 700.041
-margin_bottom = 593.0
-custom_fonts/font = ExtResource( 1 )
-text = "Kaum Cina"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label4" type="Label" parent="."]
-margin_left = 965.0
-margin_top = 558.0
-margin_right = 1144.0
-margin_bottom = 593.0
-custom_fonts/font = ExtResource( 1 )
-text = "Kaum Melayu"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -172,6 +149,66 @@ visible = false
 
 [node name="Sprite6" type="Sprite" parent="."]
 visible = false
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 102.0
+margin_top = 541.0
+margin_right = 270.0
+margin_bottom = 606.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum India"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="."]
+margin_left = 542.0
+margin_top = 541.0
+margin_right = 710.0
+margin_bottom = 606.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum Cina"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel3" type="Panel" parent="."]
+margin_left = 958.0
+margin_top = 541.0
+margin_right = 1147.0
+margin_bottom = 606.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum Melayu"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="Button1" to="." method="_on_Button1_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

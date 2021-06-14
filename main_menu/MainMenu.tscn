@@ -204,6 +204,7 @@ alignment = 1
 [node name="SettingsButton" parent="Menu/LowerButton/ButtonIcon5/Buttons" instance=ExtResource( 7 )]
 margin_top = 11.0
 margin_bottom = 71.0
+scene_to_load = "res://settings/Setting.tscn"
 
 [node name="FadeIn" parent="." instance=ExtResource( 12 )]
 visible = false

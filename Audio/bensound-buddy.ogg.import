@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bensound-buddy.ogg-67b1caeebd2d90a91188cf1743de534b.oggstr"
+
+[deps]
+
+source_file="res://Audio/bensound-buddy.ogg"
+dest_files=[ "res://.import/bensound-buddy.ogg-67b1caeebd2d90a91188cf1743de534b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

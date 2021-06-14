@@ -1,0 +1,133 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Buttons/SoundOnBtn.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Buttons/MusicOnBtn.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Buttons/MusicOffBtn.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Buttons/SoundOffBtn.png" type="Texture" id=7]
+[ext_resource path="res://settings/Setting.gd" type="Script" id=8]
+
+[node name="Setting" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -393.0
+margin_top = -235.5
+margin_right = 393.0
+margin_bottom = 235.5
+
+[node name="Label" type="Label" parent="Panel"]
+anchor_right = 1.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_shadow = Color( 1, 0.647059, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+text = "Tetapan"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -260.0
+margin_top = 68.5
+margin_right = -130.0
+margin_bottom = 124.5
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_shadow = Color( 0.215686, 0.376471, 0.827451, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+text = "Muzik"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 148.0
+margin_top = 68.5
+margin_right = 278.0
+margin_bottom = 124.5
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color_shadow = Color( 0.352941, 0.929412, 0.913725, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 5
+text = "Suara"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicOnBtn" type="TextureButton" parent="Panel"]
+margin_left = 136.11
+margin_top = 149.337
+margin_right = 262.11
+margin_bottom = 275.337
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MusicOffBtn" type="TextureButton" parent="Panel"]
+visible = false
+margin_left = 136.11
+margin_top = 149.337
+margin_right = 262.11
+margin_bottom = 275.337
+texture_normal = ExtResource( 6 )
+
+[node name="SoundOnBtn" type="TextureButton" parent="Panel"]
+margin_left = 544.0
+margin_top = 150.0
+margin_right = 670.0
+margin_bottom = 276.0
+texture_normal = ExtResource( 3 )
+
+[node name="SoundOffBtn" type="TextureButton" parent="Panel"]
+margin_left = 544.0
+margin_top = 148.0
+margin_right = 670.0
+margin_bottom = 274.0
+texture_normal = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="Panel/MusicOnBtn" to="." method="_on_MusicOnBtn_pressed"]
+[connection signal="pressed" from="Panel/MusicOffBtn" to="." method="_on_MusicOffBtn_pressed"]
