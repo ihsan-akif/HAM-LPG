@@ -8,10 +8,11 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if $Panel/MusicOnBtn.is_visible_in_tree():
-		get_node("Panel/MusicOffBtn").visible = false
+	print(MusicController.isMusicPlay)
+	if (MusicController.isMusicPlay == true):
 		get_node("Panel/MusicOnBtn").visible = true
-	elif $Panel/MusicOffBtn.is_visible_in_tree():
+		get_node("Panel/MusicOffBtn").visible = false
+	else:
 		get_node("Panel/MusicOnBtn").visible = false
 		get_node("Panel/MusicOffBtn").visible = true
 
