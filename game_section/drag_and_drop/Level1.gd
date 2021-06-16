@@ -17,6 +17,9 @@ func _process(delta):
 		var pos = .get_local_mouse_position()
 		get_node("Sprite" + str(n)).set_position(pos)
 
+func play_sound():
+	if MusicController.isSoundPlay == true:
+		MusicController.play_mouse_click_sound()
 
 func status():
 	# status 0 is when nothing being click 
@@ -90,6 +93,7 @@ func status():
 		print("on_move " + on_move)
 
 func _on_Button1_pressed():
+	play_sound()
 	n = 1
 	status()
 	if dd == false:
@@ -110,6 +114,7 @@ func _on_Button4_pressed():
 
 
 func _on_Button2_pressed():
+	play_sound()
 	n = 2
 	status()
 	if dd == false:
@@ -125,6 +130,7 @@ func _on_Button2_pressed():
 
 
 func _on_Button3_pressed():
+	play_sound()
 	n = 3
 	status()
 	if dd == false:
@@ -150,11 +156,13 @@ func _on_Button6_pressed():
 
 
 func _on_TextureButton_pressed():
+	play_sound()
 	global.highScoreDAD = 0
 	get_tree().change_scene("res://game_section/GameMenu.tscn")
 
 
 func _on_ClearBtn_pressed():
+	play_sound()
 	get_node("Button1").set_text("1")
 	get_node("Button2").set_text("2")
 	get_node("Button3").set_text("3")
@@ -180,6 +188,7 @@ func _on_ClearBtn_pressed():
 
 
 func _on_SubmitBtn_pressed():
+	play_sound()
 	if get_node("Button4").get_text() == "2":
 		global.highScoreDAD += 1
 		print("Score: " + str(global.highScoreDAD))

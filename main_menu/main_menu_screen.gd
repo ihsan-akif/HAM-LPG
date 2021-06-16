@@ -28,3 +28,25 @@ func _on_Button_pressed(scene_to_load):
 
 func _on_FadeIn_fade_finished() -> void:
 	get_tree().change_scene(scene_path_to_load)
+
+func play_sound():
+	if MusicController.isSoundPlay == true:
+		MusicController.play_mouse_click_sound()
+
+func _on_LearningSectionButton_pressed():
+	play_sound()
+
+func _on_TriviaQuestionButton_pressed():
+	play_sound()
+
+
+func _on_GameSectionButton_pressed():
+	play_sound()
+
+
+func _on_LeaderboardButton_pressed():
+	play_sound()
+
+
+func _on_SettingsButton_pressed():
+	play_sound()

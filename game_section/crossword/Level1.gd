@@ -7,6 +7,9 @@ var cursor_line = 0
 var cursor_column = 0
 var textEditName
 
+func play_sound():
+	if MusicController.isSoundPlay == true:
+		MusicController.play_mouse_click_sound()
 
 func limitWord():
 	var new_text : String = textEditName.text
@@ -24,154 +27,185 @@ func limitWord():
 
 
 func _on_IbanI_text_changed():
+	play_sound()
 	textEditName = $Panel/IbanI
 	limitWord()
 
 
 func _on_IbanB_text_changed():
+	play_sound()
 	textEditName = $Panel/IbanB
 	limitWord()
 
 
 func _on_IbanA_text_changed():
+	play_sound()
 	textEditName = $Panel/IbanA
 	limitWord()
 
 
 func _on_IbanN_text_changed():
+	play_sound()
 	textEditName = $Panel/IbanN
 	limitWord()
 
 
 func _on_IpokP_text_changed():
+	play_sound()
 	textEditName = $Panel/IpokP
 	limitWord()
 
 
 func _on_IpokO_text_changed():
+	play_sound()
 	textEditName = $Panel/IpokO
 	limitWord()
 
 
 func _on_IpokK_text_changed():
+	play_sound()
 	textEditName = $Panel/IpokK
 	limitWord()
 
 
 func _on_CinaC_text_changed():
+	play_sound()
 	textEditName = $Panel/CinaC
 	limitWord()
 
 
 func _on_CinaI_text_changed():
+	play_sound()
 	textEditName = $Panel/CinaI
 	limitWord()
 
 
 func _on_CinaA_text_changed():
+	play_sound()
 	textEditName = $Panel/CinaA
 	limitWord()
 
 
 func _on_CeongsamE_text_changed():
+	play_sound()
 	textEditName = $Panel/CeongsamE
 	limitWord()
 
 
 func _on_CeongsamO_text_changed():
+	play_sound()
 	textEditName = $Panel/CeongsamO
 	limitWord()
 
 
 func _on_CeongsamN_text_changed():
+	play_sound()
 	textEditName = $Panel/CeongsamN
 	limitWord()
 
 
 func _on_CeongsamG_text_changed():
+	play_sound()
 	textEditName = $Panel/CeongsamG
 	limitWord()
 
 
 func _on_CeongsamS_text_changed():
+	play_sound()
 	textEditName = $Panel/CeongsamS
 	limitWord()
 
 
 func _on_CeongsamA_text_changed():
+	play_sound()
 	textEditName = $Panel/CeongsamA
 	limitWord()
 
 
 func _on_CeongsamM_text_changed():
+	play_sound()
 	textEditName = $Panel/CeongsamM
 	limitWord()
 
 
 func _on_SariA_text_changed():
+	play_sound()
 	textEditName = $Panel/SariA
 	limitWord()
 
 
 func _on_SariR_text_changed():
+	play_sound()
 	textEditName = $Panel/SariR
 	limitWord()
 
 
 func _on_SariI_text_changed():
+	play_sound()
 	textEditName = $Panel/SariI
 	limitWord()
 
 
 func _on_TangyuanT_text_changed():
+	play_sound()
 	textEditName = $Panel/TangyuanT
 	limitWord()
 
 
 func _on_TangyuanN_text_changed():
+	play_sound()
 	textEditName = $Panel/TangyuanN
 	limitWord()
 
 
 func _on_TangyuanG_text_changed():
+	play_sound()
 	textEditName = $Panel/TangyuanG
 	limitWord()
 
 
 func _on_TangyuanY_text_changed():
+	play_sound()
 	textEditName = $Panel/TangyuanY
 	limitWord()
 
 
 func _on_TangyuanU_text_changed():
+	play_sound()
 	textEditName = $Panel/TangyuanU
 	limitWord()
 
 
 func _on_TangyuanA_text_changed():
+	play_sound()
 	textEditName = $Panel/TangyuanA
 	limitWord()
 
 
 func _on_TangyuanN2_text_changed():
+	play_sound()
 	textEditName = $Panel/TangyuanN2
 	limitWord()
 
 
 func _on_QuestionBtn_pressed():
+	play_sound()
 	get_node("Panel2").show()
 
 
 func _on_Button_pressed():
+	play_sound()
 	get_node("Panel2").hide()
 
 
 func _on_BackBtn_pressed():
+	play_sound()
 	global.highScoreCW = 0
 	get_tree().change_scene("res://game_section/GameMenu.tscn")
 
 
 func _on_ClearBtn_pressed():
+	play_sound()
 	get_node("Panel/IbanI").set_text("")
 	get_node("Panel/IbanB").set_text("")
 	get_node("Panel/IbanA").set_text("")
@@ -202,6 +236,7 @@ func _on_ClearBtn_pressed():
 
 
 func _on_SubmitBtn_pressed():
+	play_sound()
 	if get_node("Panel/IbanI").get_text() == "i" or get_node("Panel/IbanI").get_text() == "I":
 		global.highScoreCW += 1
 

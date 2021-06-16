@@ -6,13 +6,19 @@ var title = "a"
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if MusicController.isSoundPlay == true:
+		MusicController.play_congratulations_sound()
 	print(global.highScoreTQ)
 	get_node("Score").text = str("Markah Anda: ", global.highScoreTQ)
 	leaderboard_sortingTQ()
 	pass
 
+func play_sound():
+	if MusicController.isSoundPlay == true:
+		MusicController.play_mouse_click_sound()
 
 func _on_SendBtn_pressed():
+	play_sound()
 	title = str($PlayerName.text)
 	print(title)
 	leaderboard_sortingTQ()

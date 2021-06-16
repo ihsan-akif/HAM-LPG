@@ -208,4 +208,9 @@ scene_to_load = "res://settings/Setting.tscn"
 
 [node name="FadeIn" parent="." instance=ExtResource( 12 )]
 visible = false
+[connection signal="pressed" from="Menu/UpperButton/ButtonIcon1/Buttons/LearningSectionButton" to="." method="_on_LearningSectionButton_pressed"]
+[connection signal="pressed" from="Menu/UpperButton/ButtonIcon2/Buttons/TriviaQuestionButton" to="." method="_on_TriviaQuestionButton_pressed"]
+[connection signal="pressed" from="Menu/UpperButton/ButtonIcon3/Buttons/GameSectionButton" to="." method="_on_GameSectionButton_pressed"]
+[connection signal="pressed" from="Menu/LowerButton/ButtonIcon4/Buttons/LeaderboardButton" to="." method="_on_LeaderboardButton_pressed"]
+[connection signal="pressed" from="Menu/LowerButton/ButtonIcon5/Buttons/SettingsButton" to="." method="_on_SettingsButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

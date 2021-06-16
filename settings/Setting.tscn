@@ -118,8 +118,12 @@ margin_top = 150.0
 margin_right = 670.0
 margin_bottom = 276.0
 texture_normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="SoundOffBtn" type="TextureButton" parent="Panel"]
+visible = false
 margin_left = 544.0
 margin_top = 148.0
 margin_right = 670.0
@@ -131,3 +135,5 @@ __meta__ = {
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
 [connection signal="pressed" from="Panel/MusicOnBtn" to="." method="_on_MusicOnBtn_pressed"]
 [connection signal="pressed" from="Panel/MusicOffBtn" to="." method="_on_MusicOffBtn_pressed"]
+[connection signal="pressed" from="Panel/SoundOnBtn" to="." method="_on_SoundOnBtn_pressed"]
+[connection signal="pressed" from="Panel/SoundOffBtn" to="." method="_on_SoundOffBtn_pressed"]

@@ -5,12 +5,17 @@ extends Control
 #func _ready():
 #
 
+func play_sound():
+	if MusicController.isSoundPlay == true:
+		MusicController.play_mouse_click_sound()
 
 func _on_BackBtn_pressed():
+	play_sound()
 	get_tree().change_scene("res://main_menu/MainMenu.tscn")
 
 
 func _on_TQButton_pressed():
+	play_sound()
 	get_node("Panel/PickLeaderboard").set_visible(false)
 	get_node("Panel/NameTxt").set_visible(true)
 	get_node("Panel/ScoreTxt").set_visible(true)
@@ -32,6 +37,7 @@ func _on_TQButton_pressed():
 
 
 func _on_DragAndDropButton_pressed():
+	play_sound()
 	get_node("Panel/PickLeaderboard").set_visible(false)
 	get_node("Panel/NameTxt").set_visible(true)
 	get_node("Panel/ScoreTxt").set_visible(true)
@@ -53,6 +59,7 @@ func _on_DragAndDropButton_pressed():
 
 
 func _on_CrosswordButton_pressed():
+	play_sound()
 	get_node("Panel/PickLeaderboard").set_visible(false)
 	get_node("Panel/NameTxt").set_visible(true)
 	get_node("Panel/ScoreTxt").set_visible(true)
