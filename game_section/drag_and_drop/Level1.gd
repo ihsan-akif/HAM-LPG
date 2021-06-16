@@ -184,10 +184,10 @@ func _on_ClearBtn_pressed():
 	get_node("Button5").disabled = false
 	get_node("Button6").disabled = false
 	
-	global.highScoreDAD = 0
+#	global.highScoreDAD = 0
 
 
-func _on_SubmitBtn_pressed():
+func _on_NextLvlBtn_pressed():
 	play_sound()
 	if get_node("Button4").get_text() == "2":
 		global.highScoreDAD += 1
@@ -201,7 +201,6 @@ func _on_SubmitBtn_pressed():
 		global.highScoreDAD += 1
 		print("Score: " + str(global.highScoreDAD))
 
-	global.highScoreDAD = (global.highScoreDAD / 3) * 100
-	print("Final Score: " + str(int(global.highScoreDAD)))
+	print("Score Lvl 1: " + str(int(global.highScoreDAD)))
 	
-	get_tree().change_scene("res://game_section/drag_and_drop/DADCongratulationScreen.tscn")
+	get_tree().change_scene("res://game_section/drag_and_drop/Level2.tscn")

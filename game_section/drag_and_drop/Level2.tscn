@@ -1,0 +1,221 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://main_menu/fonts/lilita_one_30.tres" type="DynamicFont" id=1]
+[ext_resource path="res://game_section/Images/Blank.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/Background/Background 1.png" type="Texture" id=6]
+[ext_resource path="res://learning_section/Images/TraditionalFood/UlatMulong.png" type="Texture" id=7]
+[ext_resource path="res://main_menu/fonts/lilita_one_48.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Assets/Buttons/BackBtn.png" type="Texture" id=9]
+[ext_resource path="res://learning_section/Images/TraditionalFood/Pinaasakan.png" type="Texture" id=10]
+[ext_resource path="res://learning_section/Images/TraditionalFood/CakarAyam.png" type="Texture" id=11]
+[ext_resource path="res://game_section/drag_and_drop/Level2.gd" type="Script" id=12]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 12 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 196.927
+margin_top = 33.7361
+margin_right = 1188.93
+margin_bottom = 89.7361
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.0823529, 0.239216, 0.827451, 1 )
+text = "Pilih makanan tradisional bagi tiga kaum berikut"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" type="Button" parent="."]
+margin_left = 101.823
+margin_top = 138.191
+margin_right = 270.823
+margin_bottom = 270.191
+text = "1"
+icon = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 541.823
+margin_top = 138.191
+margin_right = 710.823
+margin_bottom = 270.191
+text = "2"
+icon = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 965.823
+margin_top = 138.191
+margin_right = 1134.82
+margin_bottom = 270.191
+text = "3"
+icon = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button4" type="Button" parent="."]
+margin_left = 100.823
+margin_top = 378.191
+margin_right = 269.823
+margin_bottom = 510.191
+icon = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 540.823
+margin_top = 378.191
+margin_right = 709.823
+margin_bottom = 510.191
+icon = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button6" type="Button" parent="."]
+margin_left = 964.823
+margin_top = 378.191
+margin_right = 1133.82
+margin_bottom = 510.191
+icon = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClearBtn" type="Button" parent="."]
+margin_left = 498.632
+margin_top = 660.008
+margin_right = 600.632
+margin_bottom = 701.008
+custom_fonts/font = ExtResource( 1 )
+text = "Padam"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NextLvlBtn" type="Button" parent="."]
+margin_left = 655.065
+margin_top = 660.008
+margin_right = 759.065
+margin_bottom = 701.008
+custom_fonts/font = ExtResource( 1 )
+text = "Seterusnya"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite1" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 11 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 7 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 10 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+visible = false
+
+[node name="Sprite5" type="Sprite" parent="."]
+visible = false
+
+[node name="Sprite6" type="Sprite" parent="."]
+visible = false
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 70.0
+margin_top = 541.0
+margin_right = 297.0
+margin_bottom = 623.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum
+Kadazan-Dusun"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="."]
+margin_left = 542.0
+margin_top = 541.0
+margin_right = 710.0
+margin_bottom = 606.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum Iban"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel3" type="Panel" parent="."]
+margin_left = 952.0
+margin_top = 541.0
+margin_right = 1154.0
+margin_bottom = 606.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Panel3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+text = "Kaum Melanau"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="Button1" to="." method="_on_Button1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
+[connection signal="pressed" from="ClearBtn" to="." method="_on_ClearBtn_pressed"]
+[connection signal="pressed" from="NextLvlBtn" to="." method="_on_NextLvlBtn_pressed"]

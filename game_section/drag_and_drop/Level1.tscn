@@ -33,13 +33,13 @@ __meta__ = {
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = 212.927
+margin_left = 196.927
 margin_top = 33.7361
-margin_right = 1115.93
+margin_right = 1188.93
 margin_bottom = 89.7361
 custom_fonts/font = ExtResource( 8 )
 custom_colors/font_color = Color( 0.0823529, 0.239216, 0.827451, 1 )
-text = "Pilih makanan tradisi bagi tiga kaum berikut"
+text = "Pilih makanan tradisional bagi tiga kaum berikut"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -118,13 +118,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SubmitBtn" type="Button" parent="."]
+[node name="NextLvlBtn" type="Button" parent="."]
 margin_left = 655.065
 margin_top = 660.008
 margin_right = 759.065
 margin_bottom = 701.008
 custom_fonts/font = ExtResource( 1 )
-text = "Selesai"
+text = "Seterusnya"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -217,4 +217,4 @@ __meta__ = {
 [connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
 [connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]
 [connection signal="pressed" from="ClearBtn" to="." method="_on_ClearBtn_pressed"]
-[connection signal="pressed" from="SubmitBtn" to="." method="_on_SubmitBtn_pressed"]
+[connection signal="pressed" from="NextLvlBtn" to="." method="_on_NextLvlBtn_pressed"]
